@@ -1,8 +1,65 @@
-<footer>
-  <div class="container">
-    <span class="title-block title-block_one">Footer</span>
-    <a href="/">Главная</a>
-    <a href="/pages/catalog">Каталог</a>
-    <a href="/pages/toys">Игрушки</a>
-  </div>
+<footer class="footer">
+  <section class="container">
+      <h2 class="hidden">footer container</h2>
+      <div class="three-columns">
+          <section class="footer-navigation">
+              <h2 class="footer-navigation-heading">Navigation</h2>
+              <span class="footer-line"></span>
+              <ul class="footer-navigation-list">
+                  <li><a class="footer-navigation-items" href="#">About Us</a></li>
+                  <li><a class="footer-navigation-items" href="/pages/blog/">Blog</a></li>
+                  <li><a class="footer-navigation-items" href="#">Design Services</a></li>
+                  <li><a class="footer-navigation-items" href="#">Featured On</a></li>
+                  <li><a class="footer-navigation-items" href="#">2018 Holiday Catalog</a></li>
+                  <li><a class="footer-navigation-items" href="#">Shop By Designer</a></li>
+              </ul>
+          </section>
+          <section class="footer-Customer-Information">
+              <h2 class="footer-navigation-heading">Customer Information</h2>
+              <span class="footer-line"></span>
+              <ul class="footer-navigation-list">
+                  <li><a class="Customer-Information-item" href="/pages/contact-us/">Contact Us</a></li>
+                  <li><a class="Customer-Information-item" href="/pages/toys/">Sale Exclusions</a></li>
+                  <li><a class="Customer-Information-item" href="#">Shipping & Returns</a></li>
+                  <li><a class="Customer-Information-item" href="#">Terms & Conditions</a></li>
+                  <li><a class="Customer-Information-item" href="#">Privacy Policy</a></li>
+                  <li><a class="Customer-Information-item" href="#">Search</a></li>
+              </ul>                           
+          </section>
+          <section class="footer-connect">
+              <h2 class="footer-navigation-heading">Connect</h2>
+              <span class="footer-line"></span>
+              <div class="email-join">
+                  <form action="/" class="footer-form">
+                      <label>
+                          <input class="footer-email-label" type="email" name="email" placeholder="Email">                    
+                      </label>
+                  </form>
+                    @@include('./button/index.html', {
+                        "link": "#",
+                        "text": "join"
+                    })
+              </div>                    
+              <ul class="footer-messengers">
+                  <li><a class="footer-messenger-link" href="#" aria-label="link to facebook">
+                          <img class="picture-position" src="/static/images/facebook.svg" alt="facebook">
+                      </a></li>    
+                  <li><a class="footer-messenger-link" href="#" aria-label="link to twitter">
+                          <img class="picture-position" src="/static/images/twitter.svg" alt="twitter">
+                      </a></li>
+                  <li><a class="footer-messenger-link" href="#" aria-label="link to pinterest">
+                          <img class="picture-position" src="/static/images/pinterest.svg" alt="pinterest">
+                      </a></li>
+                  <li><a class="footer-messenger-link" href="#" aria-label="link to instagram">
+                          <img class="picture-position" src="/static/images/instagram.svg" alt="instagram">
+                      </a></li>
+              </ul>
+          </section>
+      </div>       
+      <ul class="footer-bottom">
+          <li><p class="footer-bottom-rating">Company Rating &nbsp; &nbsp; &nbsp; &#9733; &#9733; &#9733; &#9733; &#9733;</p></li>
+          <li><p class="footer-bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</p> </li>
+          <li><p class="footer-bottom-web">Web Design — Direct Line Development</p></li>    
+      </ul>
+  </section>        
 </footer>

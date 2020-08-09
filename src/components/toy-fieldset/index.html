@@ -1,0 +1,89 @@
+<div class="blue-field">
+    <form action="/" class="parameters container">
+        <fieldset class="toy-fieldset">
+            <label class="parameter-settings cost">
+                <span class="parameter-header">Cost</span>
+                <input class="range" type="range" name="cost" min="0" max="500" step="10">
+                <span class="digital-begin">0</span>
+                <span class="digital-end">500</span>
+            </label>  
+        </fieldset>
+        <fieldset class="toy-fieldset color-block">
+            <span class="parameter-header">Color</span>               
+            <ul class="fieldset-list">
+                <li class="fieldset-item">
+                    <label class="parameter-settings">
+                        <input class="color hidden" name="color" type="checkbox" value="black">
+                        <span class="choosen-parameters color-checkbox">Black</span>
+                    </label>
+                </li>
+                <li class="fieldset-item">
+                    <label class="parameter-settings">
+                        <input class="color hidden" name="color" type="checkbox" value="blue">
+                        <span class="choosen-parameters color-checkbox">Blue</span>
+                    </label>
+                </li>
+                <li class="fieldset-item">
+                    <label class="parameter-settings">
+                        <input class="color hidden" name="color" type="checkbox" value="green" disabled>
+                        <span class="choosen-parameters color-checkbox">Green</span>
+                    </label>
+                </li>
+                <li class="fieldset-item">
+                    <label class="parameter-settings">
+                        <input class="color hidden" name="color" type="checkbox" value="white">
+                        <span class="choosen-parameters color-checkbox">White</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset> 
+        <fieldset class="toy-fieldset delivery-block">
+            <span class="parameter-header">Delivery</span>
+            <ul class="fieldset-list">
+                <li class="fieldset-item-delivery">
+                    <label class="parameter-settings">
+                        <input class="delivery hidden" name="shipping" type="radio" value="free" disabled>
+                        <span class="choosen-parameters delivery-radio">Free shipping</span>
+                    </label>
+                </li>
+                <li class="fieldset-item-delivery">
+                    <label class="parameter-settings">
+                        <input class="delivery hidden" name="shipping" type="radio" value="fast">
+                        <span class="choosen-parameters delivery-radio">Fast shipping</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>    
+        <fieldset class="toy-fieldset amount-block">
+            <span class="parameter-header">Amount</span>
+            <ul class="fieldset-list-amount">
+                <li class="fieldset-item-amount">
+                    <label class="parameter-settings-amount">
+                        <input class="amount hidden" name="amount-of-goods" type="radio" value="0-5" checked>
+                        <span class="choosen-parameters amount-radio"></span>                                  
+                        <span class="digitals">0-5</span>
+                    </label>
+                </li>
+                <li class="fieldset-item-amount">
+                    <label class="parameter-settings-amount">
+                        <input class="amount hidden" name="amount-of-goods" type="radio" value="10-20">
+                        <span class="choosen-parameters amount-radio"></span>    
+                        <span class="digitals">10-20</span>                            
+                    </label>                            
+                </li>
+                <li class="fieldset-item-amount">
+                    <label class="parameter-settings-amount">
+                        <input class="amount hidden" name="amount-of-goods" type="radio" value="20-50">
+                        <span class="choosen-parameters amount-radio"></span>                                
+                        <span class="digitals">20-50</span>
+                    </label>
+                </li>
+                </ul>
+        </fieldset>  
+        @@include('./button/index.html', {
+            "link": "#",
+            "text": "Apply",
+            "class": "apply-button"
+        })
+    </form>
+</div>

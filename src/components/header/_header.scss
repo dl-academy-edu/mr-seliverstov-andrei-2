@@ -1,24 +1,90 @@
-header {
-  background-color: #89f7fe;
-  height: 80px;
-  display: flex;
-  align-items: center;
+/* Header */
 
-  span {
-    padding-right: 20px;
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+.header-link:hover {
+  opacity: .5;
 }
 
+.header-link:active {
+  opacity: .2;
+}
 
+.header-margin {
+  display: flex;
+  align-items: center;
+  margin-top: 55px; 
+  margin-bottom: 57px;
+  flex-wrap: wrap;
+}
+
+.header-list {
+  display: flex;
+  
+}
+
+.header-right-corner {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-navigation-link {
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;    
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.header-navigation-link:hover {
+  opacity: .5;
+}
+
+.header-navigation-link:active {
+  opacity: .2;
+}
+
+.header-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 60px;
+}
+
+.header-contact-button {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+  text-transform: uppercase;
+  display: block;
+  min-width: 93px;
+  text-align: center;
+  padding: 4px 1px;
+  margin-left: 15px;
+}
+
+.header-contact-button:hover {
+  opacity: .5;
+}
+
+.header-contact-button:active {
+  opacity: .2;
+}
+
+.header-right-corner {
+  list-style-type: none;
+}
+
+.header-search-button {
+  background: none;
+  border: none;  
+  display: block; 
+  min-width: 17px;
+  min-height: 17px;
+}
+
+.header-search-button:hover {
+  opacity: .5;
+}
+
+.header-search-button:active {
+  opacity: .2;
+}

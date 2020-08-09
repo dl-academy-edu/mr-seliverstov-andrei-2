@@ -1,22 +1,213 @@
-footer {
-  background-color: #ffd042;
-  height: 80px;
+/* Footer */
+
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.three-columns::after {
+  content: '';
+  display: block;
+  width: 1180px;
+  height: 1px;
+  background-color: #666666;
+  position: absolute;
+  top: 407px;
+}
+
+.footer-navigation-heading {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 52px;
+  color: #AAAAAA;
+  margin-top: 85px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.footer-navigation-heading::after {
+  position: absolute;
+  content: '';   
+  width: 380px;
+  border: 1px;
+  background-color: #666666;
+  display: block;
+  height: 1px;
+  top: 58px;
+}
+
+.footer-navigation-items {    
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF; 
+  margin: 28px 0;
+  display: block;
+  margin: 15px 0;
+}
+
+.footer-navigation-items:hover {
+  opacity: .5;
+}
+
+.footer-navigation-items:active {
+  opacity: .2;
+}
+
+.footer {
+  background-color: #434343;
+}
+
+.Customer-Information-item {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 28px 0;
+  display: block;
+  margin: 15px 0;
+}
+
+.Customer-Information-item:hover {
+  opacity: .5;
+}
+
+.Customer-Information-item:active {
+  opacity: .2;
+}
+
+.footer-navigation-list {
+  list-style-type: none;  
+  padding-left: 0;        
+}
+
+.email-join {
+  display: flex;
+  margin-bottom: 25px;
+  width: 380px;
+  margin-top: -4px;
+}
+
+.footer-email-label {
+  width: 300px;
+  height: 40px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
   display: flex;
   align-items: center;
+  color: #EBEBEB;
+  background-color: #666666;
+  border: none;
+  padding: 9px 15px;
+  box-sizing: border-box;
+}
 
-  span {
-    padding-right: 20px;
-  }
+.footer-email-label:hover {
+  background: #666666;
+  border: 1px solid #FFFDFD;
+  box-sizing: border-box;
+}
 
-  a {
-    color: #000;
-    text-decoration: none;
+.footer-email-label:active {
+  background: #666666;
+  border: 1px solid #FFFDFD;
+  box-sizing: border-box;
+}
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+.footer-email-label::-webkit-input-placeholder {  
+  color: #EBEBEB;
+}
+
+.footer-messengers {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.footer-messenger-link {
+  display: flex;
+  background: #666666;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.picture-position {
+  margin: auto;
+}
+
+.picture-position:hover {
+  opacity: .5;
+}
+
+.picture-position:active {
+  opacity: .2;
+}
+
+.footer-bottom {    
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  margin-top: 20px;
+}
+
+.footer-bottom-rating {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.footer-bottom-rating:hover {
+  color: #C29974;
+}
+
+.footer-bottom-rating:active {
+  color: #C29974;
+}
+
+.footer-bottom-copyright {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-right: -50px;
+}
+
+.footer-bottom-web {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A2A2A2;
+  margin-right: 82px;
+}
+
+.footer-bottom-web:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+.footer-bottom-web:active {
+  text-decoration: underline;
+  color: #FFFFFF;
 }

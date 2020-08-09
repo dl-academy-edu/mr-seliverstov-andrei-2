@@ -1,0 +1,19 @@
+/* Partners */
+
+.partner-list {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-top: 91px;
+    margin-bottom: 108px;
+    flex-wrap: wrap;
+}
+
+.partner-item:hover {
+    opacity: 0.5;
+}
+
+.partner-item:active {
+    opacity: 0.3;
+}

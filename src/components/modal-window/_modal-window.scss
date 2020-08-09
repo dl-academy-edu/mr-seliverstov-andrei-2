@@ -1,0 +1,56 @@
+/* Modal window */
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(125, 151, 218, 0.8);
+    display: none;
+}
+
+.modal-background_open {
+    display: flex;
+}
+
+.main-page {
+    position: relative;
+    margin: auto;
+}
+
+.exit-button {
+    position: absolute;
+    right: -21px;
+    top: -2px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.exit-button::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 2px;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+}
+
+.exit-button::after {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 2px;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+}
+
+.exit-button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.exit-button:active {
+    opacity: .3;
+}
