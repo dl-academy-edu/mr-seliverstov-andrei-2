@@ -1,0 +1,46 @@
+<section class="catalog container">
+    <h1 class="catalog-heading">Category Products</h1>
+    <ul class="breadcrumbs-navigation">
+        <li><a class="breadcrumbs" href="/index.html">Home</a></li>
+        <li><span class="breadcrumbs category-next" ><img src="/static/images/breadcrumb-vector.png" alt="breadcrumb vector"></span>
+        <li><span class="breadcrumbs last-crumb">Catalog</span></li>
+    </ul>
+    <ul class="Category-Products-list">        
+        @@include('catalog/catalog-cards.html', {
+            "src": "/static/images/APPAREL-KIDS.png",
+            "alt": "APPAREL KIDS",
+            "text": "APPAREL KIDS",
+            "color": "blue"
+        })
+        @@include('catalog/catalog-cards.html', {
+            "src": "/static/images/HOLIDAY-SHOP.png",
+            "alt": "HOLIDAY SHOP",
+            "text": "HOLIDAY <br> SHOP",
+            "color": "brown"
+        })
+        @@include('catalog/catalog-cards.html', {
+            "src": "/static/images/TOYS.png",
+            "alt": "TOYS",
+            "text": "TOYS",
+            "color": "beige"
+        })
+        @@include('catalog/catalog-cards.html', {
+            "src": "/static/images/ACCESSORIES.png",
+            "alt": "ACCESSORIES",
+            "text": "ACCESSORIES",
+            "color": "grey"
+        })
+        @@include('catalog/catalog-cards.html', {
+            "src": "/static/images/SALE.png",
+            "alt": "SALE",
+            "text": "SALE",
+            "color": "pink"
+        })
+        @@include('catalog/catalog-cards.html', {
+            "src": "/static/images/APPAREL-ADULTS.png",
+            "alt": "APPAREL ADULTS",
+            "text": "APPAREL ADULTS",
+            "color": "light-blue"
+        })
+    </ul>
+</section>

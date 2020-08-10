@@ -1,0 +1,87 @@
+/* Toy cards */
+
+.toys-cards-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding-left: 0;
+    margin-bottom: 45px;
+}
+
+.toys-card-item {
+    width: 380px;
+    min-height: 497px;
+    margin: 10px 10px 10px;
+}
+
+.toys-card-item:hover .learn-more {
+    display: block;    
+    opacity: 0.9;
+}
+
+.toys-card-item:active .learn-more {
+    display: block;    
+    opacity: 0.67;
+}
+
+.image-block {
+    width: 380px;
+    height: 497px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn-more {
+    position: absolute;
+    width: 207px;
+    height: 207px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E5EAF8;
+    display: none;
+    margin-top: -60px;
+}
+
+.learn-more-text {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;    
+    text-transform: uppercase;
+    color: #1E0606;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.description-block {
+    height: 112px;
+}
+
+.toy-description {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #1E0606;
+    margin-bottom: 0;
+    margin-top: 31px;
+}
+
+.toy-price {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E0606;
+    margin-bottom: 0;
+}
