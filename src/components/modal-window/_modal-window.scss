@@ -8,10 +8,11 @@
     bottom: 0;
     background-color: rgba(125, 151, 218, 0.8);
     display: none;
-}
 
-.modal-background_open {
-    display: flex;
+    &_open {
+        display: flex;
+    }
+
 }
 
 .main-page {
@@ -26,31 +27,33 @@
     border: none;
     background: none;
     outline: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 18px;
+        width: 2px;
+        background: #FFFFFF;
+        transform: rotate(45deg);
+    }
+    
+    &::after {
+        content: "";
+        position: absolute;
+        height: 18px;
+        width: 2px;
+        background: #FFFFFF;
+        transform: rotate(-45deg);
+    }
+    
+    &:hover {
+        opacity: .5;
+        cursor: pointer;
+    }
+    
+    &:active {
+        opacity: .3;
+    }
+
 }
 
-.exit-button::before {
-    content: "";
-    position: absolute;
-    height: 18px;
-    width: 2px;
-    background: #FFFFFF;
-    transform: rotate(45deg);
-}
-
-.exit-button::after {
-    content: "";
-    position: absolute;
-    height: 18px;
-    width: 2px;
-    background: #FFFFFF;
-    transform: rotate(-45deg);
-}
-
-.exit-button:hover {
-    opacity: .5;
-    cursor: pointer;
-}
-
-.exit-button:active {
-    opacity: .3;
-}

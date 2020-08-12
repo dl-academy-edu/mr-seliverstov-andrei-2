@@ -1,54 +1,69 @@
-.cards-list {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 48px;
-    margin-bottom: 20px;
+.cards {
+
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 48px;
+        margin-bottom: 20px;
+    }
+
+    &__blog {
+        width: 380px;
+
+        &-desription-text {    
+            font-family: "Open Sans", Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #1E0606;
+            margin: 15px 0 34px;
+        }
+
+        &-date-text {
+            font-family: "Roboto", Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #818181;
+            margin: 17px 0 10px;
+        }
+        
+        &-desription-heading {
+            font-family: "Montserrat", Arial, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 31px;
+            color: #1E0606;
+            margin: 10px 0 15px;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            
+            &:active {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        }                  
+
+    }
+
 }
 
-.card-block {
-    width: 380px;
-}
 
-.date-text {
-    font-family: "Roboto", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #818181;
-    margin: 17px 0 10px;
-}
 
-.blog-desription-heading {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 31px;
-    color: #1E0606;
-    margin: 10px 0 15px;
-}
 
-.blog-desription-heading:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
-.blog-desription-heading:active {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
-.blog-desription-text {    
-    font-family: "Open Sans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    color: #1E0606;
-    margin: 15px 0 33px;
-}
+
+
+
 

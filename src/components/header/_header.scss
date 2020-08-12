@@ -1,90 +1,87 @@
 /* Header */
 
-.header-link:hover {
-  opacity: .5;
-}
-
-.header-link:active {
-  opacity: .2;
-}
-
-.header-margin {
+.header {
   display: flex;
   align-items: center;
   margin-top: 55px; 
   margin-bottom: 57px;
   flex-wrap: wrap;
-}
 
-.header-list {
-  display: flex;
-  
-}
+  &__link:hover {
+    opacity: .5;
+  }
 
-.header-right-corner {
-  margin-left: auto;
-  display: flex;
-}
+  &__link:active {
+    opacity: .2;
+  }
 
-.header-navigation-link {
-  font-size: 14px;
-  line-height: 19px;
-  color: #1E0606;    
-  margin-right: 20px;
-  text-transform: uppercase;
-}
+  /*Navigation*/
 
-.header-navigation-link:hover {
-  opacity: .5;
-}
+  &__navigation-list {
+    display: flex;      
+    list-style-type: none;
+    padding: 0;
+    margin-left: 60px;
+  }
 
-.header-navigation-link:active {
-  opacity: .2;
-}
+  &__navigation-link {
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;    
+    margin-right: 20px;
+    text-transform: uppercase; 
 
-.header-list {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 60px;
-}
+    &:hover {
+      opacity: .5;
+    }
 
-.header-contact-button {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 19px;
-  color: #1E0606;
-  text-transform: uppercase;
-  display: block;
-  min-width: 93px;
-  text-align: center;
-  padding: 4px 1px;
-  margin-left: 15px;
-}
+    &:active {
+      opacity: .2;
+    }    
+  }
 
-.header-contact-button:hover {
-  opacity: .5;
-}
+  /*Right corner*/
 
-.header-contact-button:active {
-  opacity: .2;
-}
+  &__nav-right-corner {
+    margin-left: auto;
+    display: flex;  
+    list-style-type: none;
+  }
 
-.header-right-corner {
-  list-style-type: none;
-}
+  &__nav-contact-button {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
+    display: block;
+    min-width: 93px;
+    text-align: center;
+    padding: 4px 1px;
+    margin-left: 15px;
 
-.header-search-button {
-  background: none;
-  border: none;  
-  display: block; 
-  min-width: 17px;
-  min-height: 17px;
-}
+    &:hover { 
+      opacity: .5;
+    }
 
-.header-search-button:hover {
-  opacity: .5;
-}
+    &:active {
+      opacity: .2;
+    }
+  }
 
-.header-search-button:active {
-  opacity: .2;
+  &__nav-search-button {
+    background: none;
+    border: none;  
+    display: block; 
+    min-width: 17px;
+    min-height: 17px;
+
+    &:hover {
+      opacity: .5;
+    }
+
+    &:active {
+      opacity: .2;
+    }
+  }
 }

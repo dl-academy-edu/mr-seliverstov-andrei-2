@@ -1,11 +1,9 @@
-<section class="catalog container">
-    <h1 class="catalog-heading">Category Products</h1>
-    <ul class="breadcrumbs-navigation">
-        <li><a class="breadcrumbs" href="/index.html">Home</a></li>
-        <li><span class="breadcrumbs category-next" ><img src="/static/images/breadcrumb-vector.png" alt="breadcrumb vector"></span>
-        <li><span class="breadcrumbs last-crumb">Catalog</span></li>
-    </ul>
-    <ul class="Category-Products-list">        
+@@include('heading-&-breadcrumbs/index.html', {
+    "text": "Catalog",
+    "title": "category products"
+})
+<section class="container">
+    <ul class="Category-Product__list">        
         @@include('catalog/catalog-cards.html', {
             "src": "/static/images/APPAREL-KIDS.png",
             "alt": "APPAREL KIDS",
