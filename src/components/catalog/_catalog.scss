@@ -1,55 +1,63 @@
 /* Catalog */
 
-.Category-Products-list {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 0 -10px;
+.Category-Product {
+
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 -10px;
+    }
+
+    &__cards {
+        margin: 11px 10px;
+
+        &:nth-child(6n - 2) {
+            margin-left: 210px;
+        }
+
+    }
+
+    &__block {
+        position: relative;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 270px;
+        box-sizing: border-box;
+    }
+
+    &__img{
+        position: absolute;
+    }
+    
+    &__foto-name{
+        position: relative;
+        font-family: "Montserrat", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;    
+
+        &:hover {
+            text-decoration: underline;
+        }
+        
+        &:active {
+            text-decoration: underline;
+        }
+
+    }    
+
 }
 
-.Category-Products-cards {
-    margin: 11px 10px;
-}
-
-.Category-Products-cards:nth-child(6n - 2) {
-    margin-left: 210px;
-}
-
-.Category-Products-img{
-    position: absolute;
-}
-
-.products-block {
-    position: relative;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 280px;
-    height: 270px;
-    box-sizing: border-box;
-}
-
-.foto-name{
-    position: relative;
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-align: center;    
-}
-
-.foto-name:hover {
-    text-decoration: underline;
-}
-
-.foto-name:active {
-    text-decoration: underline;
-}
+/*Colors*/
 
 .navy-blue {
     background-color:#DBE4DB;;

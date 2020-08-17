@@ -2,49 +2,49 @@
 
 .bottom-blocks {
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 147px;
 }
 
 .about-us {
     margin-right: 57px;
+    margin-top: 5px;
     background: #E1F0F7;
     padding: 31px;
     min-height: 236px;
     max-width: 543px;
     width: 100%;
-    margin-bottom: 152px;
-}
 
-.about-us-heading {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #1E0606;
-    margin-top: -53px;
-    margin-bottom: 12px;
-}
+    &__heading {
+        font-family: "Montserrat", Arial, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #1E0606;
+        margin-top: -55px;
+        margin-bottom: 11px;
+    }
 
-.about-us-subheading {
-    font-family: "Crimson Text", Arial, sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 32px;
-    color: #1E0606;
-    margin: 10px 0;
-}
+    &__subheading {
+        font-family: "Crimson Text", Arial, sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 32px;
+        color: #1E0606;
+        margin: 10px 0;
+    }
 
-.about-us-text {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
-    margin: 11px 0 29px;
+    &__text {
+        font-family: "Open Sans", Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+        margin: 10px 0 29px;
+    }
 }
 
 /* Contacts */
@@ -54,31 +54,32 @@
     background: #E1F0F7;
     height: 209px;
     max-width: 543px;
-    width: 100%;
-}
+    width: 100%;    
+    margin-top: 5px;
 
-.contacts-heading {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #1E0606;
-    margin-top: -51px;
-    margin-bottom: 20px;
-}
-
-.contacts-text {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
-    margin: 20px 0 20px;
+    &__heading {
+        font-family: "Montserrat", Arial, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #1E0606;
+        margin-top: -55px;
+        margin-bottom: 20px;
+    }
+    
+    &__text {
+        font-family: "Open Sans", Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+        margin: 20px 0 20px;
+    }
 }
 
 .map {
-    margin-bottom: -120x;
+    margin-bottom: -120px;
 }

@@ -2,86 +2,87 @@
 /* Page navigation */
 
 .page-navigation {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 63px;
-  }
-  
-  .pages {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 63px;
+
+  &__pages {
     display: flex;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
     margin-right: 67px;
-    margin-bottom: 65px;
+
+    &_numbers {
+      margin-left: 67px;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #1E0606;
+
+      &:hover {
+        opacity: .5;
+        cursor: pointer;
+      }
+
+    }
+
   }
-  
-  .page-numbers {
-    margin-left: 67px;
-    font-family: "Montserrat", Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #1E0606;
-  }
-  
-  .first-page {
+
+  &__first-page {
     color: #C29974;
   }
   
-  .transparent {
-    color: transparent;
-  }
+}  
   
-  .page-numbers:hover {
-    opacity: .5;
-    cursor: pointer;
-  }
-  
-  .vector-left {    
-    width: 20px;
-    height: 20px;
-    border: none;   
-    border-left: 4px solid  rgba(30, 6, 6, 0.12);
-    border-bottom: 4px solid rgba(30, 6, 6, 0.12);
-    transform: rotate(45deg);
-    display: block;
-  }
-  
-  .vector-left:hover {
+.vector-left {    
+  width: 20px;
+  height: 20px;
+  border: none;   
+  border-left: 4px solid  rgba(30, 6, 6, 0.12);
+  border-bottom: 4px solid rgba(30, 6, 6, 0.12);
+  transform: rotate(45deg);
+  display: block;
+
+  &:hover {
     border-left: 4px solid  #C29974;
     border-bottom: 4px solid #C29974;
     cursor: pointer;
   }
   
-  .vector-left:active {
+  &:active {
     border-left: 4px solid  #C29974;
     border-bottom: 4px solid #C29974;
     opacity: .5;
   }
-  
-  .vector-right {    
-    width: 20px;
-    height: 20px;
-    border: none;   
-    color: black; 
-    border-left: 4px solid  rgba(30, 6, 6, 0.12);
-    border-bottom: 4px solid rgba(30, 6, 6, 0.12);
-    transform: rotate(225deg);
-    display: block;
-  }
-  
-  .vector-right:hover {
+
+}
+
+.vector-right {    
+  width: 20px;
+  height: 20px;
+  border: none;   
+  color: black; 
+  border-left: 4px solid  rgba(30, 6, 6, 0.12);
+  border-bottom: 4px solid rgba(30, 6, 6, 0.12);
+  transform: rotate(225deg);
+  display: block;
+
+  &:hover {
     border-left: 4px solid  #C29974;
     border-bottom: 4px solid #C29974;
     cursor: pointer;
   }
   
-  .vector-right:active {
+  &:active {
     border-left: 4px solid  #C29974;
     border-bottom: 4px solid #C29974;
     opacity: .5;
   }
-  
+
+}
+
+

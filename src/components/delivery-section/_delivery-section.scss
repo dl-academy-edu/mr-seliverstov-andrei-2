@@ -1,71 +1,87 @@
 /* Delivery */
 
-.delivery-section {
+.delivery {
     display: flex;
     align-items: flex-start;   
     margin-top: 73px; 
+
+    
+    &__picture {
+        width: 480px;
+        height: 559px;
+    }
+
+    &__block {
+        margin-left: 120px;
+        margin-top: 39px;
+    }
+
+    &__section-heading {
+        font-family: "Montserrat", Arial, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #1E0606;
+        margin-bottom: 7px;
+        margin-top: -9px;
+    }
+
+    &__heading-list {
+        list-style-type: none;
+        padding: 0;
+        margin-left: -60px;
+        margin-bottom: 19px;
+        margin-top: 5px;
+    
+        &-button {
+            font-family: "Crimson Text", Arial, sans-serif;
+            font-style: italic;
+            font-size: 26px;
+            line-height: 32px;
+            color: #1E0606;
+            background: none;
+            border: none;  
+            width: 326px;
+            height: 55px;
+            text-align: left;
+            padding-left: 60px;
+        
+            &:hover {
+                background-color: rgba(112, 187, 220, 0.2);
+                font-weight: 700;
+            }
+            
+            &:active {
+                background-color: rgba(112, 187, 220, 0.2);
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__text-section {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+    }
+
+    &__text {
+        margin-bottom: 33px;
+        max-width: 480px;
+    }    
 }
 
-.delivery-section-heading {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #1E0606;
-    margin-bottom: 7px;
-    margin-top: -9px;
-}
 
-.delivery-heading-button {
-    font-family: "Crimson Text", Arial, sans-serif;
-    font-style: italic;
-    font-size: 26px;
-    line-height: 32px;
-    color: #1E0606;
-    background: none;
-    border: none;  
-    width: 326px;
-    height: 55px;
-    text-align: left;
-    padding-left: 60px;
-}
 
-.delivery-heading-button:hover {
-    background-color: rgba(112, 187, 220, 0.2);
-    font-weight: 700;
-}
 
-.delivery-heading-button:active {
-    background-color: rgba(112, 187, 220, 0.2);
-    font-weight: 700;
-}
 
-.delivery-section-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
-    margin: 15x;
-}
 
-.delivery-text {
-    margin-bottom: 33px;
-    max-width: 480px;
-}
 
-.delivery-picture {
-    width: 480px;
-    height: 559px;
-    margin-right: -5px;
-}
 
-.delivery-heading-list {
-    list-style-type: none;
-    padding: 0;
-    margin-left: -60px;
-    margin-bottom: 19px;
-    margin-top: 5px;
-}
+
+
+
+
