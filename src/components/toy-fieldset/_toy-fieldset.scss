@@ -150,9 +150,8 @@
 
 }
 
-.delivery{
-    margin-left: 124px;   
-    display: block;
+.deliverys{
+    margin-left: 124px; 
     margin-top: 40px;
 
 
@@ -200,16 +199,16 @@
 
 }
 
-input:checked ~ .delivery__radio::after{
+input:checked ~ .deliverys__radio::after{
     opacity: 1;
 }
 
-.delivery__input:focus ~ .delivery__radio{
+.deliverys__input:focus ~ .deliverys__radio{
     outline: auto;
 }
 
 .color__input:disabled ~ .color__checkbox,
-.delivery__input:disabled ~ .delivery__radio {
+.deliverys__input:disabled ~ .deliverys__radio {
     opacity: .5;
     text-decoration: none;
     cursor: default;
@@ -251,6 +250,7 @@ input:checked ~ .delivery__radio::after{
             cursor: pointer;
             background-color: #F3D0DB;
             opacity: .5;
+            transition:$tr_duration $tr_easing;
         }
 
     }

@@ -19,16 +19,16 @@
         &:hover .image-block__learn-more {
             display: block;    
             opacity: 0.9;
+            transition:$tr_duration $tr_easing;
         }
         
         &:active .image-block__learn-more {
             display: block;    
             opacity: 0.67;
+            transition:$tr_duration $tr_easing;
         }
     }   
 }
-
-
 
 .image-block {
     width: 380px;
@@ -69,7 +69,7 @@
 
 }
 
-.description {
+.descriptions {
     height: 112px;
 
     &__toy {

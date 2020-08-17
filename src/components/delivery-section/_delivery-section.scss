@@ -1,11 +1,10 @@
 /* Delivery */
 
 .delivery {
-    display: flex;
     align-items: flex-start;   
-    margin-top: 73px; 
-
-    
+    margin-top: 73px;     
+    display: flex;
+        
     &__picture {
         width: 480px;
         height: 559px;
@@ -34,32 +33,33 @@
         margin-left: -60px;
         margin-bottom: 19px;
         margin-top: 5px;
+    }
     
-        &-button {
-            font-family: "Crimson Text", Arial, sans-serif;
-            font-style: italic;
-            font-size: 26px;
-            line-height: 32px;
-            color: #1E0606;
-            background: none;
-            border: none;  
-            width: 326px;
-            height: 55px;
-            text-align: left;
-            padding-left: 60px;
+    &__heading-list-button {
+        font-family: "Crimson Text", Arial, sans-serif;
+        font-style: italic;
+        font-size: 26px;
+        line-height: 32px;
+        color: #1E0606;
+        background: none;
+        border: none;  
+        width: 326px;
+        height: 55px;
+        text-align: left;
+        padding-left: 60px;
+        transition:$tr_duration $tr_easing;
+    
+        &:hover {
+            background-color: rgba(112, 187, 220, 0.2);
+            font-weight: 700;
+        }
         
-            &:hover {
-                background-color: rgba(112, 187, 220, 0.2);
-                font-weight: 700;
-            }
-            
-            &:active {
-                background-color: rgba(112, 187, 220, 0.2);
-                font-weight: 700;
-            }
+        &:active {
+            background-color: rgba(112, 187, 220, 0.2);
+            font-weight: 700;
         }
     }
-
+    
     &__text-section {
         font-style: normal;
         font-weight: normal;

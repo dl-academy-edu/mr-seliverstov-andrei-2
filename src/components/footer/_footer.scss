@@ -60,6 +60,7 @@
 
       &:hover {
         opacity: .5;
+        transition:$tr_duration $tr_easing;
       }
       
       &:active {
@@ -83,6 +84,7 @@
 
     &:hover {
       opacity: .5;
+      transition:$tr_duration $tr_easing;
     }
     
     &:active {
@@ -112,16 +114,18 @@
       border: none;
       padding: 9px 15px;
       box-sizing: border-box;
+      border: 1px solid transparent;
 
       &:hover {
         background: #666666;
-        border: 1px solid #FFFDFD;
         box-sizing: border-box;
+        transition:$tr_duration $tr_easing;
+        border-color:#FFFDFD;
       }
       
       &:active {
         background: #666666;
-        border: 1px solid #FFFDFD;
+        border-color:#FFFDFD;
         box-sizing: border-box;
       }
       
@@ -153,6 +157,7 @@
 
       &:hover {
         opacity: .5;
+        transition:$tr_duration $tr_easing;
       }
       
       &:active {
@@ -181,6 +186,7 @@
 
       &:hover {
         color: #C29974;
+        transition:$tr_duration $tr_easing;
       }
       
       &:active {
@@ -207,15 +213,17 @@
       line-height: 22px;
       color: #A2A2A2;
       margin-right: 82px;
+      border-bottom: 1px solid transparent;
+      transition:$tr_duration $tr_easing;
 
       &:hover {
-        text-decoration: underline;
         color: #FFFFFF;
+        border-color: #FFFFFF;
       }
       
       &:active {
-        text-decoration: underline;
         color: #FFFFFF;
+        border-color: #FFFFFF;
       }
 
     }

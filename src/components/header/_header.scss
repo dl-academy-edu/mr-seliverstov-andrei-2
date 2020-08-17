@@ -1,5 +1,7 @@
 /* Header */
 
+@import "../vars";
+
 .header {
   display: flex;
   align-items: center;
@@ -9,6 +11,7 @@
 
   &__link:hover {
     opacity: .5;
+    transition:$tr_duration $tr_easing;
   }
 
   &__link:active {
@@ -33,6 +36,7 @@
 
     &:hover {
       opacity: .5;
+      transition:$tr_duration $tr_easing;
     }
 
     &:active {
@@ -62,6 +66,7 @@
 
     &:hover { 
       opacity: .5;
+      transition:$tr_duration $tr_easing;
     }
 
     &:active {
@@ -78,6 +83,7 @@
 
     &:hover {
       opacity: .5;
+      transition:$tr_duration $tr_easing;
     }
 
     &:active {

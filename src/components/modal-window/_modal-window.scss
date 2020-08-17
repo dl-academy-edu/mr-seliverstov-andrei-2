@@ -26,7 +26,8 @@
     top: -2px;
     border: none;
     background: none;
-    outline: none;
+    outline: none;    
+    transition:$tr_duration $tr_easing;
 
     &::before {
         content: "";
