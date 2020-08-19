@@ -26,6 +26,7 @@
       &:hover {
         opacity: .5;
         cursor: pointer;
+        transition:$tr_duration $tr_easing;
       }
 
     }
@@ -51,6 +52,7 @@
     border-left: 4px solid  #C29974;
     border-bottom: 4px solid #C29974;
     cursor: pointer;
+    transition:$tr_duration $tr_easing;
   }
   
   &:active {
@@ -75,6 +77,7 @@
     border-left: 4px solid  #C29974;
     border-bottom: 4px solid #C29974;
     cursor: pointer;
+    transition:$tr_duration $tr_easing;
   }
   
   &:active {

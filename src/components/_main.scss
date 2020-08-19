@@ -1,3 +1,5 @@
+@import "./vars";
+
 body { 
     font-family: "Open Sans", Arial, sans-serif;
   }
@@ -59,7 +61,8 @@ body {
     background-color: black;
     color: white;
     border: none;
-    padding: 9px 24px;
+    padding: 9px 24px;    
+    transition:$tr_duration $tr_easing;
 
     &:focus {
       outline-color: #C29974;

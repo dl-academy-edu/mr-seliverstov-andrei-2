@@ -14,6 +14,7 @@
 
     &__item:hover {
         opacity: 0.5;
+        transition:$tr_duration $tr_easing;
     }
 
     &__item:active {

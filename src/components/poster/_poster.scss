@@ -34,6 +34,7 @@
             &:hover {
                 background-color: rgba(30, 6, 6, 0.6);
                 cursor: pointer;
+                transition:$tr_duration $tr_easing;
             }            
         }
 
