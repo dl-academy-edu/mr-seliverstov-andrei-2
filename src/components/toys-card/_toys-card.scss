@@ -19,13 +19,12 @@
         &:hover .image-block__learn-more {
             display: block;    
             opacity: 0.9;
-            transition:$tr_duration $tr_easing;
         }
         
         &:active .image-block__learn-more {
             display: block;    
             opacity: 0.67;
-            transition:$tr_duration $tr_easing;
+            
         }
     }   
 }
@@ -47,8 +46,9 @@
         align-items: center;
         justify-content: center;
         background: #E5EAF8;
-        display: none;
+        opacity: 0;
         margin-top: -60px;
+        transition:$tr_duration $tr_easing;
 
         &-text {
             font-family: "Montserrat", Arial, sans-serif;
