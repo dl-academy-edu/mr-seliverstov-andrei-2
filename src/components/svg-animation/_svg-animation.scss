@@ -1,0 +1,236 @@
+.svg {
+    margin-bottom: 60px;
+    padding-left: 0;
+    margin-left: -20px;
+}
+
+.svg__blue {
+    animation: svg__blue 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__blue {
+    from {
+        opacity: 0;
+    }
+    12% {
+        opacity: 0;
+    }
+    17% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__green {
+    animation: svg__green 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__green {
+    from {
+        opacity: 0;
+    }
+    24% {
+        opacity: 0;
+    }
+    29% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__red {
+    animation: svg__red 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__red {
+    from {
+        opacity: 0;
+    }
+    36% {
+        opacity: 0;
+    }
+    41% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__yellow {
+    animation: svg__yellow 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__yellow {
+    from {
+        opacity: 0;
+    }
+    48% {
+        opacity: 0;
+    }
+    53% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__grey-one {
+    animation: svg__grey-one 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__grey-one {
+    from {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__grey-two {
+    animation: svg__grey-two 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__grey-two {
+    from {
+        opacity: 0;
+    }
+    72% {
+        opacity: 0;
+    }
+    77% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__grey-three {
+    animation: svg__grey-three 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__grey-three {
+    from {
+        opacity: 0;
+    }
+    78% {
+        opacity: 0;
+    }
+    83% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__grey-four {
+    animation: svg__grey-four 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__grey-four {
+    from {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__lower-square {
+    animation: svg__lower-square 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__lower-square {
+    from {
+        opacity: 0;
+    }
+    78% {
+        opacity: 0;
+    }
+    83% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.svg__upper-square {
+    animation: svg__upper-square 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg__upper-square {
+    from {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.right-rectangle {
+    animation: right-rectangle 10s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes right-rectangle {
+    from {
+        fill: #656D78;
+    }
+    36% {
+        fill: #656D78;
+    }
+    41% {
+        fill: #E6E9ED;
+    }
+    to {
+        fill: #E6E9ED;
+    }
+}

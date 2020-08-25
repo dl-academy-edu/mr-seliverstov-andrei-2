@@ -1,0 +1,328 @@
+.animation {
+    margin: 0 auto;
+    width: 1400px;
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.car-one {
+    position: absolute;
+    bottom: 29%;
+    left: -200%;
+    animation: car-one 12s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes car-one {
+    from {
+        bottom: 30%;
+        left: -200%;
+    }
+    to {
+        bottom: 30%;
+        left: 200%;
+    }
+}
+
+.car-two {
+    position: absolute;
+    bottom: 30%;
+    left: -200%;
+    animation: car-two 12s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes car-two {
+    from {
+        bottom: 30%;
+        left: -200%;
+    }
+    to {
+        bottom: 30%;
+        left: 200%;
+    }
+}
+
+.car-three {
+    position: absolute;
+    bottom: 30%;
+    left: -200%;
+    animation: car-three 12s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+}
+
+@keyframes car-three {
+    from {
+      bottom: 30%;
+      left: -200%;
+    }
+    to {
+      bottom: 30%;
+      left: 200%;
+    }
+}
+
+.car-four {
+    position: absolute;
+    bottom: 30%;
+    left: -100%;
+    animation: car-four 12s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 9s;
+}
+
+@keyframes car-four {
+    from {
+      bottom: 30%;
+      left: -200%;
+    }
+    to {
+      bottom: 30%;
+      left: 200%;
+    }
+}
+
+.lantern-grey {
+    position: absolute;
+    bottom: 25%;
+    left: 35%;
+}
+
+.second-lantern {
+    position: absolute;
+    bottom: 25%;
+    right: 1%;
+}
+
+.taxi {
+    position: absolute;
+    bottom: 15%;
+    right: 100%;
+    animation: taxi 12s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes taxi {
+    from {
+        bottom: 15%;
+        right: -200%;
+    }
+    40% {
+        bottom: 15%;
+        right: -5%;
+    }
+    60% {
+        bottom: 15%;
+        right: -5%;
+    }
+    to {
+        bottom: 15%;
+        right: 200%;
+    }
+}
+
+.taxi-message {
+    position: absolute;
+    bottom: 45%;
+    right: 100%;
+    animation: taxi-message 12s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes taxi-message {
+    from {
+        bottom: 45%;
+        right: 24%;
+        opacity: 0;
+    }
+    43% {
+        bottom: 45%;
+        right: 24%;
+        opacity: 0;
+    }
+    45% {
+        bottom: 45%;
+        right: 24%;
+        opacity: 1;
+    }
+    57% {
+        bottom: 45%;
+        right: 24%;
+        opacity: 1;
+    }
+    59% {
+        bottom: 45%;
+        right: 24%;
+        opacity: 0;
+    }
+    to {
+        bottom: 45%;
+        right: 24%;
+        opacity: 0;
+    }
+}
+
+.lantern-black {
+    position: absolute;
+    bottom: 5%;
+    right: 14%;
+}
+
+.mans-hand {
+    position: absolute;
+    bottom: 47%;
+    left: 24%;
+    animation: mans-hand 12s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    transform: rotate(150deg);
+    transform-origin: bottom left;
+}
+
+@keyframes mans-hand {
+    from {
+        bottom: 47%;
+        left: 24%;
+        transform: rotate(150deg);
+    }
+    22% {
+        bottom: 47%;
+        left: 24%;
+        transform: rotate(150deg);
+    }
+    25% {
+        bottom: 47%;
+        left: 24%;
+        transform: rotate(0deg);
+    }
+    45% {
+        bottom: 47%;
+        left: 24%;
+        transform: rotate(0deg);
+    }
+    49% {
+        bottom: 47%;
+        left: 24%;
+        transform: rotate(150deg);
+    }
+    to {
+        bottom: 47%;
+        left: 24%;
+        transform: rotate(150deg);
+    }
+}
+
+.man {
+    position: absolute;
+    bottom: 6%;
+    left: 23%;
+}
+
+.mans-message {
+    position: absolute;
+    bottom: 57%;
+    left: 22%;
+    animation: mans-message 12s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mans-message {
+    from {
+        bottom: 57%;
+        left: 22%;
+        opacity: 0;
+    }
+    19% {
+        bottom: 57%;
+        left: 22%;
+        opacity: 0;
+    }
+    21% {
+        bottom: 57%;
+        left: 22%;
+        opacity: 1;
+    }
+    34% {
+        bottom: 57%;
+        left: 22%;
+        opacity: 1;
+    }
+    36% {
+        bottom: 57%;
+        left: 22%;
+        opacity: 0;
+    }
+    to {
+        bottom: 57%;
+        left: 22%;
+        opacity: 0;
+    }
+}
+
+.woman {
+    position: absolute;
+    bottom: 6%;
+    left: 16%;
+}
+
+.suitcases {
+    position: absolute;
+    bottom: 6%;
+    left: 15%;
+}
+
+.womans-message {
+    position: absolute;
+    bottom: 44%;
+    left: 9%;
+    animation: womans-message 12s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes womans-message {
+    from {
+        bottom: 44%;
+        left: 9%;
+        opacity: 0;
+    }
+    7% {
+        bottom: 44%;
+        left: 9%;
+        opacity: 0;
+    }
+    9% {
+        bottom: 44%;
+        left: 9%;
+        opacity: 1;
+    }
+    16% {
+        bottom: 44%;
+        left: 9%;
+        opacity: 1;
+    }
+    18% {
+        bottom: 44%;
+        left: 9%;
+        opacity: 0;
+    }
+    to {
+        bottom: 44%;
+        left: 9%;
+        opacity: 0;
+    }
+}
+
+
+
