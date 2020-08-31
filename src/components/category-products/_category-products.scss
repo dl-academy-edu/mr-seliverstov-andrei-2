@@ -14,6 +14,19 @@
         color: #1E0606;
         margin-top: 92px;
         margin-bottom: 20px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            font-size: 36px;
+            margin-top: 60px;
+            margin-bottom: 12px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 80px;
+            margin-bottom: 12px;
+        }
     }
 
     &__list {
@@ -23,10 +36,31 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 4px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            flex-wrap: nowrap;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin-top: 12px;
+            flex-wrap: nowrap;
+        }
     }
     
     &__card {
         padding: 10px 0;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin: 0 20px;
+            margin-left: 0;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin: 0 16px;
+            margin-left: 0;
+        }
     }
 
     &__block {
@@ -39,6 +73,16 @@
         justify-content: center;
         align-items: center;
 
+        @include media_interval($media_mobile, $media_tablet) {
+            width: 259px;
+            height: 249px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            width: 247px;
+            height: 238px;
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -46,6 +90,20 @@
     
     &__img {    
         position: absolute;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            width: 170px;
+            height: 170px;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            width: 170px;
+            height: 170px;
+            max-height: 100%;
+            max-width: 100%;
+        }
     }
 
     &__foto-name {
@@ -73,6 +131,15 @@
         display: flex;
         align-items: center;
         margin-bottom: 73px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin-bottom: 46px;
+            margin-top: -2px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin-bottom: 48px;
+        }
     }
 
     &__vector {
@@ -81,6 +148,12 @@
         width: 37px;
         height: 37px;
         margin-right: 6px;
+
+        @include media_interval(0, $media_mobile) {
+            width: 33px;
+            height: 33px;
+            margin-top: -60px;
+        }
     }
     
     &__text {
@@ -91,6 +164,21 @@
         color: #1E0606;    
         margin-left: 15px;
         margin-top: 20px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            font-size: 14px;
+            line-height: 19px;
+            margin-top: 16px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 14px;
+            line-height: 19px;
+            width: 247px;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-bottom: 30px;
+        }
     }
 }
 

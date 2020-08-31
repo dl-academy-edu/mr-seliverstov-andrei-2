@@ -29,6 +29,11 @@
     outline: none;    
     transition:$tr_duration $tr_easing;
 
+    @include media_interval(0, $media_mobile) {
+        right: 2px;
+        top: -28px;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -55,6 +60,6 @@
     &:active {
         opacity: .3;
     }
-
 }
+
 

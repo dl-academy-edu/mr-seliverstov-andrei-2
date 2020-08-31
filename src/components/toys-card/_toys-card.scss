@@ -9,12 +9,35 @@
         margin: 0 -10px;
         padding-left: 0;
         margin-bottom: 45px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin-right: -15px;
+            margin-bottom: 52px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin-bottom: 17px;
+        }
     }
     
     &__item {
         width: 380px;
         min-height: 497px;
         margin: 10px 10px 10px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            width: 203px;
+            min-height: 288px;
+            margin: 10px 10px 1px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            width: 40%;
+            max-width: 161px;
+            min-height: 247px;
+            margin: 10px 10px 1px;
+        }
+
 
         &:hover .image-block__learn-more {
             display: block;    
@@ -38,6 +61,16 @@
     align-items: center;
     justify-content: center;
 
+    @include media_interval($media_mobile, $media_tablet) {
+        width: 203px;
+        height: 288px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        width: 160px;
+        height: 247px;
+    }
+
     &__learn-more {
         position: absolute;
         width: 207px;
@@ -49,6 +82,12 @@
         opacity: 0;
         margin-top: -60px;
         transition:$tr_duration $tr_easing;
+
+        @include media_interval(0, $media_mobile) {
+            width: 160px;
+            height: 160px;
+            text-align: center;
+        }
 
         &-text {
             font-family: "Montserrat", Arial, sans-serif;
@@ -72,6 +111,14 @@
 .descriptions {
     height: 112px;
 
+    @include media_interval($media_mobile, $media_tablet) {
+        height: 77px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        height: 80px;
+    }
+
     &__toy {
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 14px;
@@ -80,6 +127,18 @@
         color: #1E0606;
         margin-bottom: 0;
         margin-top: 31px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 22px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 10px;
+        }
     }
     
     &__price {
@@ -90,6 +149,18 @@
         text-align: center;
         color: #1E0606;
         margin-bottom: 0;
+
+        @include media_interval($media_mobile, $media_tablet){
+            font-size: 14px;
+            line-height: 19px;
+            margin-top: 5px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 5px;
+        }
     }
 
 }

@@ -14,8 +14,26 @@
     &__cards {
         margin: 11px 10px;
 
+        @include media_interval($media_mobile, $media_tablet) {
+            margin: 10px 9.5px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            width: 44%;
+            margin: 9px 6px 8px 9px;
+            max-width: 162px;
+        }
+
         &:nth-child(6n - 2) {
             margin-left: 210px;
+
+            @include media_interval($media_mobile, $media_tablet) {
+                margin-left: 9px;
+            }
+
+            @include media_interval(0, $media_mobile) {
+                margin-left: 8px;
+            }
         }
 
     }
@@ -29,10 +47,38 @@
         width: 280px;
         height: 270px;
         box-sizing: border-box;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            width: 202px;
+            height: 196px;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            width: 160px;
+            height: 154px;
+            max-height: 100%;
+            max-width: 100%;
+        }
     }
 
     &__img{
         position: absolute;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            width: 170px;
+            height: 170px;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            width: 140px;
+            height: 140px;
+            max-height: 100%;
+            max-width: 100%;
+        }
     }
     
     &__foto-name{
@@ -44,6 +90,16 @@
         text-transform: uppercase;
         color: #ffffff;
         text-align: center;    
+
+        @include media_interval($media_mobile, $media_tablet) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 18px;
+            line-height: 22px;
+        }
 
         &:hover {
             text-decoration: underline;

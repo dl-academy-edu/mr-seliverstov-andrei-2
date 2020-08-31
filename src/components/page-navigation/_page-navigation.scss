@@ -7,12 +7,25 @@
   text-align: center;
   margin-bottom: 63px;
 
+  @include media_interval($media_mobile, $media_tablet) {
+    margin-bottom: 52px;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    margin-bottom: 53px;
+    width: 93%;
+  }
+
   &__pages {
     display: flex;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
     margin-right: 67px;
+
+    @include media_interval(0, $media_mobile) {
+      margin-right: 45px;
+    }
 
     &_numbers {
       margin-left: 67px;
@@ -22,6 +35,11 @@
       font-size: 16px;
       text-transform: uppercase;
       color: #1E0606;
+
+      @include media_interval(0, $media_mobile) {
+        font-size: 14px;
+        margin-left: 45px;
+      }
 
       &:hover {
         opacity: .5;
@@ -48,6 +66,11 @@
   transform: rotate(45deg);
   display: block;
 
+  @include media_interval(0, $media_mobile) {
+      width: 17px;
+      height: 17px;
+    }
+
   &:hover {
     border-left: 4px solid  #C29974;
     border-bottom: 4px solid #C29974;
@@ -72,6 +95,11 @@
   border-bottom: 4px solid rgba(30, 6, 6, 0.12);
   transform: rotate(225deg);
   display: block;
+
+  @include media_interval(0, $media_mobile) {
+      width: 17px;
+      height: 17px;
+  }
 
   &:hover {
     border-left: 4px solid  #C29974;

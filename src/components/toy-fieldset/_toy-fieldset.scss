@@ -5,11 +5,34 @@
     height: 255px;
     margin-bottom: 46px;
     margin-top: 51px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+        margin-top: 30px;
+        height: 323px;
+        padding-left: 50px;
+        margin-bottom: 36px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        margin-top: 19px;
+        width: 100%;
+        height: 439px;
+        margin-bottom: 32px;
+    }
 }
 
 .parameters {
     display: flex;
     padding-left: 12px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+        flex-wrap: wrap;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
 
     &__toy-fieldset {
         margin: 0;
@@ -23,6 +46,11 @@
         line-height: 22px;
         color: #1E0606;
         position: relative;
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 14px;
+            line-height: 19px;
+        }
     }
 
     &__header {
@@ -34,12 +62,27 @@
         margin-top: 40px;
         margin-bottom: 14px;
         width: 100%;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin-top: 30px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin-top: 25px;
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 12px;
+        }
     } 
     
     &__list {
         list-style-type: none;
         padding-left: 0;
         margin-top: 14px;
+
+        @include media_interval(0, $media_mobile) {
+            margin-top: 10px;
+        }
     }
 
 }
@@ -50,6 +93,10 @@
     flex-direction: row;
     position: relative;
     max-width: 200px;
+
+    @include media_interval(0, $media_mobile) {
+        margin-right: 500px;
+    }
 
     &__range {
         height: 4px;
@@ -81,6 +128,12 @@
     &__begin {
         display: inline-flex;
         margin-top: 16px;
+
+        @include media_interval(0, $media_mobile) {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 19px;
+        }
     }
     
     &__end {
@@ -88,16 +141,36 @@
         margin-left: auto;
         margin-right: -11px;
         margin-top: 16px;
-    }    
 
+        @include media_interval(0, $media_mobile) {
+            margin-top: -20px;
+            font-size: 14px;
+            line-height: 19px;
+            margin-left: 180px;
+        }
+    }  
 }
 
 .color {
     margin-left: 108px;
     margin-top: 40px;
 
+    @include media_interval($media_mobile, $media_tablet) {
+        margin-left: 85px;
+        margin-top: 30px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
     &__item {
         margin-top: 15px;
+
+        @include media_interval(0, $media_mobile) {
+            margin-top: 8px;
+        }
     }
 
     &__input:focus ~ .color__checkbox {
@@ -114,6 +187,10 @@
         position: relative;
         height: 22px;
         display: block;
+
+        @include media_interval(0, $media_mobile) {
+            padding-left: 25px;
+        }
     
         &::before{
             position: absolute;
@@ -125,6 +202,11 @@
             border: 2px solid #C29974;
             box-sizing: border-box;
             border-radius: 3px;
+
+            @include media_interval(0, $media_mobile) {
+                width: 17px;
+                height: 17px;
+            }
         }
         
         &::after{
@@ -154,9 +236,23 @@
     margin-left: 124px; 
     margin-top: 40px;
 
+    @include media_interval($media_mobile, $media_tablet) {
+        margin-left: 92px; 
+        margin-top: 30px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        margin-top: 25px;
+        margin-left: 110px;
+    }
+
 
     &__item {
         margin-top: 10px;
+
+        @include media_interval(0, $media_mobile) {
+            margin-top: 12px;
+        }
     }
 
     &__radio {
@@ -165,6 +261,10 @@
         position: relative;
         height: 22px;
         display: block;
+
+        @include media_interval(0, $media_mobile) {
+            padding-left: 25px;
+        }
 
         &:hover {
             text-decoration: underline;
@@ -181,6 +281,11 @@
             border: 2px solid #C29974;
             box-sizing: border-box;
             border-radius: 50%;
+
+            @include media_interval(0, $media_mobile) {
+                width: 16px;
+                height: 16px;
+            }
         }
         
         &::after{
@@ -218,6 +323,16 @@ input:checked ~ .deliverys__radio::after{
     margin-left: 70px;
     margin-top: 40px;
 
+    @include media_interval($media_mobile, $media_tablet) {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
     &__list {
         display: flex;
         flex-direction: row;
@@ -225,6 +340,10 @@ input:checked ~ .deliverys__radio::after{
         padding-left: 0;
         position: relative;
         margin: 15px 0;
+
+        @include media_interval(0, $media_mobile) {
+            margin: 12px 0;
+        }
     }
 
     &__item {
@@ -233,6 +352,10 @@ input:checked ~ .deliverys__radio::after{
         display: block;
         background-color: white;
         display: block;
+
+        @include media_interval(0, $media_mobile) {
+            height: 29px;
+        }
     }
 
     &__settings {
@@ -245,6 +368,10 @@ input:checked ~ .deliverys__radio::after{
         height: 35px;
         display: block;
         position: relative;
+
+        @include media_interval(0, $media_mobile) {
+            height: 29px;            
+        }
 
         &:hover {
             cursor: pointer;
@@ -272,6 +399,10 @@ input:checked ~ .deliverys__radio::after{
             border: 1px;
             opacity: 0;
             transition: opacity 0.3s;
+
+            @include media_interval(0, $media_mobile) {
+                height: 29px;
+            }
         }
 
     } 
@@ -286,6 +417,12 @@ input:checked ~ .deliverys__radio::after{
         position: relative;
         align-items: center;
         bottom: 15px;
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 14px;
+            line-height: 19px;
+            bottom: 17px;
+        }
     } 
     
     &__input:focus ~ .amount__radio::after{
@@ -303,6 +440,17 @@ input:checked ~ .amount__radio::after{
     height: 40px;
     margin-left: 60px;
     margin-top: 76px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+        margin-left: 207px;
+        margin-top: 36px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        margin-left: 120px;
+        margin-top: 12px;
+        text-align: center;
+    }
 }
 
 

@@ -1,9 +1,23 @@
+@import "../vars";
+@import "../mixins";
+
 /* Poster */
 
 .container-mini {
     max-width: 1180px;
     padding: 0 10px;
     margin: 0 auto;
+
+    @include media_interval($media_mobile, $media_tablet) {
+        max-width: 648px;
+        padding: 0;
+        margin: 0 45px 0 60px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        width: 1005;
+        margin: 0;
+    }
 }
 
 .poster {
@@ -11,6 +25,18 @@
     background: #EEE4DB;
     height: 372px;
     margin-top: 125px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+        margin-top: 35px;
+        height: 372px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        padding: 0 20px;
+        height: 437px;
+        flex-direction: row-reverse;
+        position: relative;
+    }
 
 /*Pagination*/
 
@@ -21,6 +47,16 @@
             list-style-type: none;
             padding-left: 22px;
             margin: 8px 0;
+
+            @include media_interval($media_mobile, $media_tablet) {
+                padding-left: 0;
+            }
+
+            @include media_interval(0, $media_mobile) {
+                padding-left: 0;
+                margin: 16px 0;
+                margin-left: 23px;
+            }
         }   
 
         &-button {
@@ -30,6 +66,10 @@
             height: 3px;
             display: block;
             margin-bottom: 11px;
+
+            @include media_interval(0, $media_mobile) {
+                margin-bottom: 10px;
+            }
 
             &:hover {
                 background-color: rgba(30, 6, 6, 0.6);
@@ -48,10 +88,30 @@
             margin-top: 17px;
             margin-left: 18px;
             display: flex;
+
+            @include media_interval($media_mobile, $media_tablet) {
+                margin-left: 0;
+                width: 49px;
+                height: 49px;
+                margin-top: 23px;
+            }
+
+            @include media_interval(0, $media_mobile) {
+                margin-left: 0;
+                width: 39px;
+                height: 39px;
+                margin-top: 30px;
+                margin-left: 10px;
+            }
         }        
 
         &_big-number {
             margin: auto;
+
+            @include media_interval($media_mobile, $media_tablet) {
+                width: 39px;
+                height: 39px;
+            }
         }
     }
 
@@ -61,6 +121,14 @@
         display: block;
         margin-left: 44px;
         margin: 91px 5px 89px 34px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin: 80px 5px 12px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin: 83px 0 70px;
+        }
     }    
 
     &__title {
@@ -74,6 +142,12 @@
         margin-top: 0;
         flex-wrap: nowrap;
         min-width: 307px;
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 36px;
+            line-height: 110%;
+            min-width: 280px;
+        }
     }
 
     &__text {
@@ -84,6 +158,12 @@
         line-height: 25px;
         color: #1E0606;
         margin: 18px 0 20px;
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 14px 0 15px;
+        }
     }
     
     &__picture {
@@ -91,12 +171,33 @@
         width: 635.49px;
         height: 461px;
         margin-right: 60px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            width: 385px;
+            height: 286px;
+            margin-top: 86px;
+            margin-left: -118px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            width: 292px;
+            height: 226px;
+            margin-top: 212px;
+            right: -58px;
+            position: absolute;
+        }
     }
 
 /*Bottom block*/
 
    &__bottom-block {
         background: #C29974;    
+
+        @include media_interval(0, $media_mobile) {
+            height: 55px;
+            width: 100%;            
+            flex-wrap: wrap;
+        }
     
         &-text {
             font-family: "Open Sans", Arial, sans-serif;
@@ -110,6 +211,11 @@
             text-align: center;
             white-space: nowrap;
             color: white;
+
+            @include media_interval(0, $media_mobile) {
+                padding: 11px 10px;
+                white-space: normal;
+            }
         }
     }
 } 
