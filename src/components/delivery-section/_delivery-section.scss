@@ -24,7 +24,7 @@
         }
 
         @include media_interval(0, $media_mobile) {
-            width: 335px;
+            min-width: 335px;
             height: 357px;
         }
     }
@@ -139,7 +139,7 @@
             line-height: 19px;
             margin-bottom: 12px;
             margin-top: 12px;
-            width: 335px;
+            min-width: 335px;
         }
     }
 

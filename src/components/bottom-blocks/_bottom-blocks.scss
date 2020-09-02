@@ -34,6 +34,7 @@
         width: 100%;
         padding: 20px;
         min-height: 218px;
+        max-width: none;
     }
 
     &__heading {
@@ -51,7 +52,7 @@
             font-size: 30px;
             line-height: 37px;
             width: 282px;
-            margin-top: -30px;
+            margin-top: -32px;
             margin-bottom: 15px;
         }
 
@@ -91,7 +92,7 @@
             font-size: 14px;
             line-height: 19px;
             margin-bottom: 25px;
-            width: 335px;
+            min-width: 335px;
         }
     }
 }
@@ -115,6 +116,7 @@
         margin-top: 52px;
         padding: 20px;
         width: 100%;
+        max-width: none;
     }
 
     &__heading {
@@ -132,8 +134,8 @@
             font-size: 30px;
             line-height: 37px;
             width: 282px;
-            margin-top: -34px;
-            margin-bottom: 25px;
+            margin-top: -35px;
+            margin-bottom: 24px;
         }
 
         @include media_interval(0, $media_mobile) {
@@ -157,7 +159,7 @@
             font-size: 14px;
             line-height: 19px;
             margin-top: 10px;
-            width: 335px;
+            min-width: 335px;
         }
     }
 }

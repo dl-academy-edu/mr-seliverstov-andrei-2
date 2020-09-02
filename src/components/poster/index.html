@@ -14,7 +14,12 @@
     <div class="poster__block">
         <h2 class="poster__title">THE OOH NOO <br>COLLECTION</h2> 
         <p class="poster__text">Designed in Slovenia</p>
-        <button class="poster__button button button-open_js">EXPLORE NOW</button>                
+        @@include('./button/index.html', {
+            "class": "poster__button button button-open_js",
+            "type": "button",
+            "link": "#",
+            "text": "Explore Now"
+        })               
     </div>   
     <img class="poster__picture" src="/static/images/THE-OOH-NOO- COLLECTION.png" alt="poster-picture">            
 </section>
