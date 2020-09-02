@@ -4,15 +4,44 @@
     align-items: flex-start;   
     margin-top: 73px;     
     display: flex;
+
+    @include media_interval($media_mobile, $media_tablet) {
+        margin-top: 46px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        display: block;
+        margin-top: 40px;
+    }
         
     &__picture {
         width: 480px;
         height: 559px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            width: 258px;
+            height: 512px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            width: 335px;
+            height: 357px;
+        }
     }
 
     &__block {
         margin-left: 120px;
         margin-top: 39px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin-left: 57px;
+            margin-top: 38px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin-left: 0;
+            margin-top: 27px;
+        }
     }
 
     &__section-heading {
@@ -25,6 +54,17 @@
         color: #1E0606;
         margin-bottom: 7px;
         margin-top: -9px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 21px;
+        }
     }
 
     &__heading-list {
@@ -33,6 +73,14 @@
         margin-left: -60px;
         margin-bottom: 19px;
         margin-top: 5px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin-bottom: 10px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin-bottom: 14px;
+        }
     }
     
     &__heading-list-button {
@@ -48,6 +96,20 @@
         text-align: left;
         padding-left: 60px;
         transition:$tr_duration $tr_easing;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            font-size: 24px;
+            line-height: 30px;
+            width: 267px;
+            height: 45px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 24px;
+            line-height: 30px;
+            width: 267px;
+            height: 45px;
+        }
     
         &:hover {
             background-color: rgba(112, 187, 220, 0.2);
@@ -66,11 +128,33 @@
         font-size: 16px;
         line-height: 22px;
         color: #1E0606;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 12px;
+            margin-top: 12px;
+            width: 335px;
+        }
     }
 
     &__text {
         margin-bottom: 33px;
         max-width: 480px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin-bottom: 30px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin-top: -1px;
+            margin-bottom: 31px;
+        }
     }    
 }
 

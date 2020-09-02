@@ -10,6 +10,15 @@
         margin-top: 91px;
         margin-bottom: 108px;
         flex-wrap: wrap;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            margin-top: 55px;
+            margin-bottom: 85px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            margin-bottom: 95px;
+        }
     }
 
     &__item:hover {
@@ -19,6 +28,21 @@
 
     &__item:active {
         opacity: 0.3;
+    }
+
+    &__item {
+        @include media_interval($media_mobile, $media_tablet) {
+            transform: scale(0.7);
+            width: 25%;
+            margin: 0 -30px;
+            padding-left: 10px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            transform: scale(0.8);
+            width: 50%;
+            margin-left: -15px;
+        }
     }
     
 }
