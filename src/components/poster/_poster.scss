@@ -27,7 +27,7 @@
     margin-top: 125px;
 
     @include media_interval($media_mobile, $media_tablet) {
-        margin-top: 27px;
+        margin-top: -36px;
         height: 372px;
     }
 
@@ -36,7 +36,7 @@
         height: 437px;
         flex-direction: row-reverse;
         position: relative;
-        margin-top: 15px;
+        margin-top: -21px;
     }
 
 /*Pagination*/
@@ -131,7 +131,6 @@
 
     &__block {
         display: block;
-        margin-left: 44px;
         margin: 91px 5px 89px 34px;
 
         @include media_interval($media_mobile, $media_tablet) {            
@@ -140,6 +139,7 @@
 
         @include media_interval(0, $media_mobile) {
             margin: 83px 0 70px;
+            margin-right: auto;
         }
     }    
 
@@ -198,17 +198,17 @@
         margin-right: 60px;
 
         @include media_interval($media_mobile, $media_tablet) {
-            width: 385px;
-            height: 286px;
+            max-width: 385px;
+            max-height: 286px;
             margin-top: 86px;
             margin-left: -118px;
         }
 
         @include media_interval(0, $media_mobile) {
-            width: 292px;
-            height: 226px;
+            max-width: 292px;
+            max-height: 226px;
             margin-top: 212px;
-            right: -78px;
+            right: -58px;
             position: absolute;
         }
     }

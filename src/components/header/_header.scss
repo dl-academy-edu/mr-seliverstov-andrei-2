@@ -10,11 +10,11 @@
   flex-wrap: wrap;
 
   @include media_interval($media_mobile, $media_tablet) {
-    margin: 26px 0 25px;
+    margin: 26px 0 63px;
   }
 
   @include media_interval(0, $media_mobile) {
-    margin: 13px 0;
+    margin: 13px 0 36px;
     padding-left: 30px;
   }
 
@@ -97,9 +97,13 @@
     text-transform: uppercase;
     background-color: transparent;
     padding-right: 0;
-    padding-left: 12px;
+    margin-right: 10px;
     margin-left: auto;
     cursor: pointer;
+
+    @include media_interval(0, $media_tablet) {
+      margin-right: -7px;
+    }
 
     &:active {
         opacity: .2;

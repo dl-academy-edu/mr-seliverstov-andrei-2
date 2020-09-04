@@ -1,5 +1,10 @@
-<section class="delivery container">       
-    <img class="delivery__picture" src="/static/images/smile-woman.jpg" alt="smile-woman">
+<section class="delivery container">  
+    <picture>
+        <source srcset="/static/images/smile-woman.jpg, /static/images/smile-woman-2.jpg 2x" media="(min-width: 1024px)">
+        <source srcset="/static/images/smile-woman-tablet.jpg" media="(min-width: 768px) and (max-width 1023px)">
+        <source srcset="/static/images/smile-woman-mobile.jpg" media="(max-width: 767px)">
+        <img class="delivery__picture" srcset="/static/images/smile-woman.jpg" alt="smile-woman">
+    </picture>     
     <div class="delivery__block">
         <h2 class="delivery__section-heading">Delivery</h2>
         <ul class="delivery__heading-list">

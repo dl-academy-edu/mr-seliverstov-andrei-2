@@ -9,6 +9,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         margin: 0 -10px;
+        min-width: 375px;
     }
 
     &__cards {
@@ -65,6 +66,9 @@
 
     &__img{
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         @include media_interval($media_mobile, $media_tablet) {
             width: 170px;

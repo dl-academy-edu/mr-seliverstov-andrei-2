@@ -1,6 +1,11 @@
 <li class="toys-card__item">
     <a href="#" class="image-block">
-        <img class="image-block__image" src=@@src alt="alt">
+        <picture>
+            <source srcset="/static/images/@@src.jpg, /static/images/@@src-2.jpg 2x" media="(min-width: 1024px)">
+            <source srcset="/static/images/@@src-tablet.jpg" media="(min-width: 768px) and (max-width 1023px)">
+            <source srcset="/static/images/@@src-mobile.jpg" media="(max-width: 767px)">
+            <img class="image-block__image" srcset="/static/images/@@src.jpg" alt="@@alt">
+        </picture>  
         <div class="image-block__learn-more">
             <div class="image-block__learn-more-text">LEARN MORE</div>
         </div>

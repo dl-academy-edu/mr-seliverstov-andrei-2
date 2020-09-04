@@ -20,8 +20,13 @@
             "link": "#",
             "text": "Explore Now"
         })               
-    </div>   
-    <img class="poster__picture" src="/static/images/THE-OOH-NOO- COLLECTION.png" alt="poster-picture">            
+    </div>       
+    <picture>
+        <source srcset="/static/images/poster-picture.png, /static/images/poster-picture-2.png 2x" media="(min-width: 1024px)">
+        <source srcset="/static/images/poster-picture-tablet.png" media="(min-width: 768px) and (max-width 1023px)">
+        <source srcset="/static/images/poster-picture-mobile.png" media="(max-width: 767px)">
+        <img class="poster__picture" srcset="/static/images/poster-picture.png" alt="poster-picture">
+    </picture>            
 </section>
 <section class="poster__bottom-block container-mini">
     <h3 class="hidden">shipping</h3>

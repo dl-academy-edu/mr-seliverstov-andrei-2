@@ -19,12 +19,13 @@
         height: 559px;
 
         @include media_interval($media_mobile, $media_tablet) {
-            width: 258px;
+            min-width: 258px;
             height: 512px;
         }
 
         @include media_interval(0, $media_mobile) {
             min-width: 335px;
+            width: 335px;
             height: 357px;
         }
     }
