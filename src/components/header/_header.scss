@@ -9,14 +9,50 @@
   margin-bottom: 57px;
   flex-wrap: wrap;
 
-  &__link:hover {
-    opacity: .5;
-    transition:$tr_duration $tr_easing;
+  @include media_interval($media_mobile, $media_tablet) {
+    margin: 26px 0 63px;
   }
 
-  &__link:active {
-    opacity: .2;
+  @include media_interval(0, $media_mobile) {
+    margin: 13px 0 36px;
+    padding-left: 30px;
   }
+
+  &__link {
+    @include media_interval($media_mobile, $media_tablet) {
+      width: 62px;
+      height: 32px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      width: 42px;
+      height: 22px;
+    }
+  }
+
+  &__link-image {
+    width: 100px;
+    height: 52px;
+    
+    @include media_interval($media_mobile, $media_tablet) {
+      width: 62px;
+      height: 32px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      width: 42px;
+      height: 22px;
+    }
+
+    &:hover {
+      opacity: .5;
+      transition:$tr_duration $tr_easing;
+    }
+
+    &:active {
+      opacity: .2;
+    }
+  }    
 
   /*Navigation*/
 
@@ -25,6 +61,10 @@
     list-style-type: none;
     padding: 0;
     margin-left: 60px;
+
+    @include media_interval(0, $media_tablet) {
+      display: none;
+    }
   }
 
   &__navigation-link {
@@ -42,6 +82,32 @@
     &:active {
       opacity: .2;
     }    
+  }
+
+  &__button-open-menu {
+    @include media_interval($media_tablet, $media_laptop-big) {
+      display: none;
+    }
+
+    display: block;
+    border: none;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding-right: 0;
+    margin-right: 10px;
+    margin-left: auto;
+    cursor: pointer;
+
+    @include media_interval(0, $media_tablet) {
+      margin-right: -7px;
+    }
+
+    &:active {
+        opacity: .2;
+    }
   }
 
   /*Right corner*/
@@ -64,6 +130,14 @@
     padding: 4px 1px;
     margin-left: 15px;
 
+    @include media_interval($media_mobile, $media_tablet) {
+      display: none;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      display: none;
+    }
+
     &:hover { 
       opacity: .5;
       transition:$tr_duration $tr_easing;
@@ -78,8 +152,21 @@
     background: none;
     border: none;  
     display: block; 
-    min-width: 17px;
-    min-height: 17px;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      width: 17px;
+      height: 17px;
+      margin-right: -2px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      width: 13px;
+      height: 13px;
+      margin-right: -2px;
+    }
 
     &:hover {
       opacity: .5;

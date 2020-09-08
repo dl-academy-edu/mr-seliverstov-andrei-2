@@ -38,13 +38,15 @@
         margin-bottom: 4px;
 
         @include media_interval($media_mobile, $media_tablet) {
-            flex-wrap: nowrap;
             margin-top: 10px;
-            margin-bottom: 3px;
+            margin-bottom: 3px;         
+            overflow: scroll;
+            flex-wrap: nowrap;
         }
 
         @include media_interval(0, $media_mobile) {
-            margin-top: 12px;
+            margin-top: 12px;          
+            overflow: scroll;
             flex-wrap: nowrap;
         }
     }
@@ -90,7 +92,10 @@
     
     &__img {    
         position: absolute;
-
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+            
         @include media_interval($media_mobile, $media_tablet) {
             width: 170px;
             height: 170px;
@@ -138,7 +143,7 @@
         }
 
         @include media_interval(0, $media_mobile) {
-            margin-bottom: 48px;
+            margin-bottom: 50px;
         }
     }
 
@@ -150,9 +155,10 @@
         margin-right: 6px;
 
         @include media_interval(0, $media_mobile) {
-            width: 33px;
+            width: 34px;
             height: 33px;
-            margin-top: -60px;
+            margin-bottom: auto;
+            margin-top: 10px;
         }
     }
     
@@ -164,6 +170,7 @@
         color: #1E0606;    
         margin-left: 15px;
         margin-top: 20px;
+        width: 580px;
 
         @include media_interval($media_mobile, $media_tablet) {
             font-size: 14px;
@@ -174,10 +181,11 @@
         @include media_interval(0, $media_mobile) {
             font-size: 14px;
             line-height: 19px;
-            width: 247px;
+            min-width: 250px;
             margin-top: 5px;
-            margin-left: 10px;
+            margin-left: 11px;
             margin-bottom: 30px;
+            letter-spacing: -0.2px;
         }
     }
 }

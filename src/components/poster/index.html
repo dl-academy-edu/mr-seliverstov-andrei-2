@@ -14,9 +14,19 @@
     <div class="poster__block">
         <h2 class="poster__title">THE OOH NOO <br>COLLECTION</h2> 
         <p class="poster__text">Designed in Slovenia</p>
-        <button class="poster__button button button-open_js">EXPLORE NOW</button>                
-    </div>   
-    <img class="poster__picture" src="/static/images/THE-OOH-NOO- COLLECTION.png" alt="poster-picture">            
+        @@include('./button/index.html', {
+            "class": "poster__button button button-open_js",
+            "type": "button",
+            "link": "#",
+            "text": "Explore Now"
+        })               
+    </div>       
+    <picture>
+        <source srcset="/static/images/poster-picture.png, /static/images/poster-picture-2.png 2x" media="(min-width: 1024px)">
+        <source srcset="/static/images/poster-picture-tablet.png" media="(min-width: 768px) and (max-width 1023px)">
+        <source srcset="/static/images/poster-picture-mobile.png" media="(max-width: 767px)">
+        <img class="poster__picture" srcset="/static/images/poster-picture.png" alt="poster-picture">
+    </picture>            
 </section>
 <section class="poster__bottom-block container-mini">
     <h3 class="hidden">shipping</h3>

@@ -239,11 +239,13 @@
     @include media_interval($media_mobile, $media_tablet) {
         margin-left: 92px; 
         margin-top: 30px;
+        margin-right: 75px;
     }
 
     @include media_interval(0, $media_mobile) {
         margin-top: 25px;
         margin-left: 110px;
+        margin-right: 25px;
     }
 
 

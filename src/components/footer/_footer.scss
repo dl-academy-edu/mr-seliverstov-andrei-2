@@ -15,14 +15,14 @@
     &::after {
       content: '';
       display: block;
-      width: 1180px;
+      max-width: 1180px;
+      width: 100%;
       height: 1px;
       background-color: #666666;
       position: absolute;
       top: 408px;
 
-      @include media_interval($media_mobile, $media_tablet) {
-        width: 648px;
+      @include media_interval($media_mobile, $media_tablet) {        
         top: 400px;
       }
 
@@ -37,7 +37,7 @@
       }
 
       @include media_interval(0, $media_mobile) {
-        padding-top: 36px;
+        padding-top: 35px;
       }
     }
 
@@ -49,7 +49,7 @@
       line-height: 52px;
       color: #AAAAAA;
       margin-top: 85px;
-      margin-bottom: 36px;
+      margin-bottom: 30px;
       position: relative;
 
       @include media_interval($media_mobile, $media_tablet) {
@@ -60,7 +60,7 @@
         font-size: 16px;
         line-height: 22px;
         margin-top: 34px;
-        margin-bottom: 25px;
+        margin-bottom: 36px;
       }
     
       &::after {
@@ -91,7 +91,7 @@
 
     &-list {
       list-style-type: none;  
-      padding-left: 0;  
+      padding-left: 0; 
 
       @include media_interval(0, $media_mobile) {
         columns: 2;
@@ -105,14 +105,12 @@
       font-size: 16px;
       line-height: 22px;
       color: #FFFFFF; 
-      margin: 28px 0;
       display: block;
-      margin: 15px 0;
+      padding: 7px 0 8px;
 
       @include media_interval(0, $media_mobile) {
         font-size: 14px;
         line-height: 19px;
-        margin-bottom: 16px;
       }
 
       &:hover {
@@ -128,6 +126,14 @@
 
   }
 
+  &__customer-information {
+    padding-left: 10px;
+
+    @include media_interval(0, $media_tablet) {
+      padding-left: 0;
+    }
+  }
+
   &__customer-information-item {
     font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
@@ -135,9 +141,8 @@
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
-    margin: 28px 0;
     display: block;
-    margin: 15px 0;
+    padding: 7px 0 8px;
 
     @include media_interval(0, $media_mobile) {
       font-size: 14px;
@@ -159,7 +164,7 @@
     display: flex;
     margin-bottom: 25px;
     width: 380px;
-    margin-top: -4px;
+    margin-top: 34px;
 
     @include media_interval($media_mobile, $media_tablet) {
       width: 202px;
@@ -263,7 +268,7 @@
     padding-left: 0;
     justify-content: space-between;
     padding-bottom: 100px;
-    margin-top: 20px;
+    margin-top: 18px;
 
     @include media_interval(0, $media_mobile) {
       display: block;
@@ -295,6 +300,7 @@
 
       @include media_interval($media_mobile, $media_tablet) {
         margin-right: 300px;
+        margin-bottom: 5px;
       }
 
       &:hover {
@@ -315,10 +321,15 @@
       font-size: 16px;
       line-height: 22px;
       color: #FFFFFF;
-      margin-right: -50px;
+      padding-left: 55px;
 
       @include media_interval($media_mobile, $media_tablet) {
         margin-right: 45px;
+        padding-left: 0;
+      }
+
+      @include media_interval(0, $media_mobile) {
+        padding-left: 0;
       }
     }
     
@@ -353,7 +364,7 @@
 
   &__con {
     @include media_interval(0, $media_mobile) {
-      margin-top: 57px;
+      margin-top: 54px;
     }
 
   }

@@ -9,7 +9,7 @@
     margin: 0 auto;
 
     @include media_interval($media_mobile, $media_tablet) {
-        max-width: 648px;
+        min-width: 648px;
         padding: 0;
         margin: 0 45px 0 60px;
     }
@@ -27,7 +27,7 @@
     margin-top: 125px;
 
     @include media_interval($media_mobile, $media_tablet) {
-        margin-top: 35px;
+        margin-top: -36px;
         height: 372px;
     }
 
@@ -36,12 +36,17 @@
         height: 437px;
         flex-direction: row-reverse;
         position: relative;
+        margin-top: -21px;
     }
 
 /*Pagination*/
 
     &__pagination {
         width: 89px;
+
+        @include media_interval(0, $media_mobile) {
+            margin-right: -20px;
+        }
     
         &-list {
             list-style-type: none;
@@ -54,7 +59,7 @@
 
             @include media_interval(0, $media_mobile) {
                 padding-left: 0;
-                margin: 16px 0;
+                margin: 18px 0;
                 margin-left: 23px;
             }
         }   
@@ -67,8 +72,15 @@
             display: block;
             margin-bottom: 11px;
 
+            @include media_interval($media_mobile, $media_tablet) {
+                width: 28px;
+                margin-bottom: 10px;
+            }
+
             @include media_interval(0, $media_mobile) {
                 margin-bottom: 10px;
+                width: 27px;
+                margin-bottom: 9px;
             }
 
             &:hover {
@@ -119,15 +131,15 @@
 
     &__block {
         display: block;
-        margin-left: 44px;
         margin: 91px 5px 89px 34px;
 
-        @include media_interval($media_mobile, $media_tablet) {
-            margin: 80px 5px 12px;
+        @include media_interval($media_mobile, $media_tablet) {            
+            margin: 80px 10px 12px;
         }
 
         @include media_interval(0, $media_mobile) {
             margin: 83px 0 70px;
+            margin-right: auto;
         }
     }    
 
@@ -157,12 +169,25 @@
         font-size: 20px;
         line-height: 25px;
         color: #1E0606;
-        margin: 18px 0 20px;
+        margin: 18px 0 29px;
 
         @include media_interval(0, $media_mobile) {
             font-size: 18px;
             line-height: 22px;
-            margin: 14px 0 15px;
+            margin: 14px 0 24px;
+        }
+    }
+
+    &__button {
+        text-align: center;
+        padding: 9px 25px;
+
+        @include media_interval($media_mobile, $media_tablet) {
+            padding: 9px 25px;
+        }
+
+        @include media_interval(0, $media_mobile) {
+            padding: 9px 22px;
         }
     }
     
@@ -173,15 +198,15 @@
         margin-right: 60px;
 
         @include media_interval($media_mobile, $media_tablet) {
-            width: 385px;
-            height: 286px;
+            max-width: 385px;
+            max-height: 286px;
             margin-top: 86px;
             margin-left: -118px;
         }
 
         @include media_interval(0, $media_mobile) {
-            width: 292px;
-            height: 226px;
+            max-width: 292px;
+            max-height: 226px;
             margin-top: 212px;
             right: -58px;
             position: absolute;
