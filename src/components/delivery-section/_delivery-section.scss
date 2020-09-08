@@ -17,9 +17,10 @@
     &__picture {
         width: 480px;
         height: 559px;
+        object-fit: cover;
 
         @include media_interval($media_mobile, $media_tablet) {
-            min-width: 258px;
+            width: 258px;
             height: 512px;
         }
 
@@ -149,12 +150,14 @@
         max-width: 480px;
 
         @include media_interval($media_mobile, $media_tablet) {
-            margin-bottom: 30px;
+            margin-bottom: 30px;     
+            max-width: 580px;
         }
 
         @include media_interval(0, $media_mobile) {
             margin-top: -1px;
             margin-bottom: 31px;
+            max-width: 700px;
         }
     }    
 }

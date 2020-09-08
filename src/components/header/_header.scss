@@ -85,7 +85,7 @@
   }
 
   &__button-open-menu {
-    @include media_interval($media_tablet, $media_laptop-big) {
+    @include media_interval($media_tablet, 1800px) {
       display: none;
     }
 

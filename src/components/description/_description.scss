@@ -53,10 +53,10 @@
         margin-bottom: 15px;
 
         @include media_interval($media_mobile, $media_tablet) {
-            min-width: 648px;
+            width: 648px;
         }
 
-        @include media_interval(0, $media_mobile) {
+        @include media_interval(0, $media_mobile) {            
             width: 335px;
             margin-bottom: 15px;
             margin-top: 14px;

@@ -22,6 +22,7 @@ window.addEventListener("keydown", function(e) {
     }
 });
 
+//Mobile menu
 
 var buttonOpenMenu = document.querySelector(".js-button-open-menu"),
     buttonCloseMenu = document.querySelector(".js-button-close-menu");
@@ -33,3 +34,8 @@ buttonOpenMenu.addEventListener("click", function() {
 buttonCloseMenu.addEventListener("click", function() {
     mobile.classList.remove("mobile-menu__open")
 });
+
+//Music background volume
+
+var audio = document.querySelector(".volume");
+  		audio.volume = 0.05;
