@@ -1,3 +1,7 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
+
 .cards {
 
     &__list {
@@ -38,7 +42,7 @@
             font-weight: normal;
             font-size: 18px;
             line-height: 25px;
-            color: #1E0606;
+            color: $c_black;
             margin: 15px 0 34px;
 
             @include media_interval($media_mobile, $media_tablet) {
@@ -59,7 +63,7 @@
             font-weight: normal;
             font-size: 16px;
             line-height: 19px;
-            color: #818181;
+            color: $c_grey--text;
             margin: 17px 0 10px;
 
             @include media_interval($media_mobile, $media_tablet) {
@@ -80,7 +84,7 @@
             font-weight: bold;
             font-size: 24px;
             line-height: 31px;
-            color: #1E0606;
+            color: $c_black;
             margin: 10px 0 15px;
 
             @include media_interval($media_mobile, $media_tablet) {

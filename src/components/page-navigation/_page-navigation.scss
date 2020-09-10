@@ -1,3 +1,6 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
 
 /* Page navigation */
 
@@ -34,7 +37,7 @@
       font-weight: bold;
       font-size: 16px;
       text-transform: uppercase;
-      color: #1E0606;
+      color: $c_black;
 
       @include media_interval(0, $media_mobile) {
         font-size: 14px;
@@ -52,7 +55,7 @@
   }
 
   &__first-page {
-    color: #C29974;
+    color: $c_beige--dark;
   }
   
 }  
@@ -61,8 +64,8 @@
   width: 20px;
   height: 20px;
   border: none;   
-  border-left: 4px solid  rgba(30, 6, 6, 0.12);
-  border-bottom: 4px solid rgba(30, 6, 6, 0.12);
+  border-left: 4px solid  rgba($c_black, 0.12);
+  border-bottom: 4px solid rgba($c_black, 0.12);
   transform: rotate(45deg);
   display: block;
 
@@ -90,9 +93,8 @@
   width: 20px;
   height: 20px;
   border: none;   
-  color: black; 
-  border-left: 4px solid  rgba(30, 6, 6, 0.12);
-  border-bottom: 4px solid rgba(30, 6, 6, 0.12);
+  border-left: 4px solid  rgba($c_black, 0.12);
+  border-bottom: 4px solid rgba($c_black, 0.12);
   transform: rotate(225deg);
   display: block;
 

@@ -1,7 +1,11 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
+
 /* Form-action */
 
 .blue-field {    
-    background-color: rgba(125, 151, 218, 0.2);
+    background-color: rgba($c_blue--dark, 0.2);
     height: 255px;
     margin-bottom: 46px;
     margin-top: 51px;
@@ -44,7 +48,7 @@
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;
+        color:$c_black;
         position: relative;
 
         @include media_interval(0, $media_mobile) {
@@ -58,7 +62,7 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;
+        color: $c_black;
         margin-top: 40px;
         margin-bottom: 14px;
         width: 100%;
@@ -101,7 +105,7 @@
     &__range {
         height: 4px;
         -webkit-appearance: none;
-        background-color: gray;
+        background-color: rgba($c_black--deep, 0.5);
         margin-left: 3px;
         margin-top: 10px;
         width: 100%;
@@ -117,8 +121,8 @@
         -webkit-appearance: none;
         height: 24px;
         border-radius: 50%;
-        border: 9px solid #C29974;
-        background-color: white;
+        border: 9px solid $c_beige--dark;
+        background-color: $c_white;
     }
     
     &__range::-webkit-slider-thumb:hover {
@@ -219,7 +223,7 @@
             border-left: 2px solid;
             border-bottom: 2px solid;
             transform: rotate(-55deg);
-            color: #C29974;
+            color: $c_beige--dark;
             opacity: 0;
             transition: opacity 0.3s;
         }
@@ -239,7 +243,7 @@
     @include media_interval($media_mobile, $media_tablet) {
         margin-left: 92px; 
         margin-top: 30px;
-        margin-right: 75px;
+        margin-right: 65px;
     }
 
     @include media_interval(0, $media_mobile) {
@@ -352,7 +356,7 @@ input:checked ~ .deliverys__radio::after{
         width: 80px;
         height: 35px;
         display: block;
-        background-color: white;
+        background-color: $c_white;
         display: block;
 
         @include media_interval(0, $media_mobile) {
@@ -364,7 +368,7 @@ input:checked ~ .deliverys__radio::after{
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;
+        color: $c_black;
         position: relative;
         width: 80px;
         height: 35px;
@@ -377,7 +381,7 @@ input:checked ~ .deliverys__radio::after{
 
         &:hover {
             cursor: pointer;
-            background-color: #F3D0DB;
+            background-color: $c_pink--light;
             opacity: .5;
             transition:$tr_duration $tr_easing;
         }
@@ -396,7 +400,7 @@ input:checked ~ .deliverys__radio::after{
             left: 0px;
             width: 80px;
             height: 35px;
-            background-color: #F3D0DB;
+            background-color: $c_pink--light;
             box-sizing: border-box;
             border: 1px;
             opacity: 0;
@@ -413,7 +417,7 @@ input:checked ~ .deliverys__radio::after{
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;
+        color: $c_black;
         display: block;
         text-align: center;
         position: relative;

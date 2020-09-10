@@ -1,3 +1,7 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
+
 /* Product Description */
 
 .description{
@@ -28,7 +32,7 @@
         font-size: 38px;
         line-height: 46px;
         text-transform: uppercase;
-        color: #1E0606;
+        color: $c_black;
         margin-bottom: 25px;
 
         @include media_interval($media_mobile, $media_tablet) {
@@ -49,7 +53,7 @@
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;
+        color: $c_black;
         margin-bottom: 15px;
 
         @include media_interval($media_mobile, $media_tablet) {

@@ -9,12 +9,10 @@
 @import "./bottom-blocks/bottom-blocks";
 @import "./catalog/catalog";
 @import "./description/description";
-@import "./toy-breadcrumbs/toy-breadcrumbs";
 @import "./toy-fieldset/toy-fieldset";
 @import "./toys-card/toys-card";
 @import "./blog-cards/blog-cards";
 @import "./page-navigation/page-navigation";
-@import "./modal-window/modal-window";
 @import "./form-block/form-block";
 @import "./footer/footer";
 @import "./animation-screen/animation-screen";
@@ -26,7 +24,7 @@
 
 .modal-window {
   width: 680px;
-  height: 542px;
+  min-height: 542px;
   background: #E5EAF8;
   padding: 42px 40px;
   display: flex;

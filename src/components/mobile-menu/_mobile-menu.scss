@@ -1,3 +1,7 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
+
 .mobile-menu {    
     width: 100%;
     min-height: 381px;
@@ -6,17 +10,16 @@
     left: 0;
     bottom: 0;
     top: 0;
-    background-color: rgba(125, 151, 218, 0.8);
+    background-color: rgba($c_blue--dark, 0.8);
     display: none;
-    
+
     &__open {
         display: block;
     }
 
     &__header {
         min-width: 375px;
-        height: 73px;
-        background-color: #FFFFFF;
+        background-color: $c_white;  
 
         &-list {
             list-style-type: none;
@@ -49,7 +52,10 @@
 
     &__inner {        
         padding: 25px 120px;
-        background-color: #FFFFFF;
+        background-color: $c_white;
+        display: flex;
+        width: 100%;
+        justify-content: center;        
     }
 
     &__nav {
@@ -79,11 +85,10 @@
         text-align: center;
         text-transform: uppercase;        
         transition: color $tr_duration $tr_easing;
-        color: #1E0606;
+        color: $c_black;
 
         &:active {
             opacity: .2;
         }
-
     }
 }
