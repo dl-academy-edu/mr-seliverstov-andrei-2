@@ -196,7 +196,6 @@
         margin-top: -89px;
         width: 635.49px;
         height: 461px;
-        margin-right: 60px;
 
         @include media_interval($media_mobile, $media_tablet) {
             max-width: 385px;
@@ -209,7 +208,7 @@
             max-width: 292px;
             max-height: 226px;
             margin-top: 212px;
-            right: -58px;
+            left: 90px;
             position: absolute;
         }
     }

@@ -24,8 +24,7 @@
             margin: 10px 9.5px;
         }
 
-        @include media_interval(0, $media_mobile) {
-            width: 44%;
+        @include media_interval(0, $media_mobile) {            
             margin: 9px 6px 8px 9px;
             max-width: 162px;
         }
