@@ -9,23 +9,23 @@
 @import "./bottom-blocks/bottom-blocks";
 @import "./catalog/catalog";
 @import "./description/description";
-@import "./toy-breadcrumbs/toy-breadcrumbs";
 @import "./toy-fieldset/toy-fieldset";
 @import "./toys-card/toys-card";
 @import "./blog-cards/blog-cards";
 @import "./page-navigation/page-navigation";
-@import "./modal-window/modal-window";
 @import "./form-block/form-block";
 @import "./footer/footer";
 @import "./animation-screen/animation-screen";
 @import "./svg-animation/svg-animation";
 @import "./mobile-menu/mobile-menu";
+@import "./grid/grid";
 
 /* Modal window */
 
 .modal-window {
-  width: 680px;
-  height: 542px;
+  max-width: 680px;
+  width: 100%;
+  min-height: 542px;
   background: #E5EAF8;
   padding: 42px 40px;
   display: flex;
@@ -33,14 +33,15 @@
   position: relative;
 
   @include media_interval($media_mobile, $media_tablet) {
-    width: 648px;
+    max-width: 648px;
     padding: 41px 55px;
   }
 
   @include media_interval(0, $media_mobile) {
-    width: 335px;
+    max-width: 335px;
     height: 555px;
     padding: 25px 25px;
+    overflow: hidden;
   }
 }
 
@@ -261,6 +262,11 @@ input:checked ~ .clicking-button::after{
     color: #C29974;
     opacity: 0;
     transition: opacity 0.3s;
+
+    @include media_interval(0, $media_mobile) {
+      top: -9px;
+      left: 4px;
+    }
   }
 
 }

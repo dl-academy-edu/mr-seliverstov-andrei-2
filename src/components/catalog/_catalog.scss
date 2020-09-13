@@ -1,3 +1,8 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
+
+
 /* Catalog */
 
 .Category-Product {
@@ -19,8 +24,7 @@
             margin: 10px 9.5px;
         }
 
-        @include media_interval(0, $media_mobile) {
-            width: 44%;
+        @include media_interval(0, $media_mobile) {            
             margin: 9px 6px 8px 9px;
             max-width: 162px;
         }
@@ -28,8 +32,8 @@
         &:nth-child(6n - 2) {
             margin-left: 210px;
 
-            @include media_interval($media_mobile, $media_tablet) {
-                margin-left: 9px;
+            @include media_interval(0, $media_tablet) {
+                margin-left: 9.5px;
             }
 
             @include media_interval(0, $media_mobile) {
@@ -92,7 +96,7 @@
         font-size: 26px;
         line-height: 32px;
         text-transform: uppercase;
-        color: #ffffff;
+        color: $c_white;
         text-align: center;    
 
         @include media_interval($media_mobile, $media_tablet) {
@@ -120,25 +124,25 @@
 /*Colors*/
 
 .navy-blue {
-    background-color:#DBE4DB;;
+    background-color: $c_blue--navy;
 }
 
 .brown {
-    background-color: rgba(186, 142, 107, 0.3);
+    background-color: rgba($c_brown, 0.3);
 }
 
 .beige {
-    background-color: #F8F2DA;
+    background-color: $c_beige;
 }
 
 .grey {
-    background-color: rgba(9, 3, 79, 0.17);
+    background-color: rgba($c_blue--deep, 0.17);
 }
 
 .pink {    
-    background: rgba(207, 68, 111, 0.25);
+    background: rgba($c_pink, 0.25);
 }
 
 .light-blue{
-    background-color: rgba(125, 151, 218, 0.2);
+    background-color: rgba($c_blue--dark, 0.2);
 }

@@ -1,6 +1,19 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
+
+
 /* Category Products */
 
 .category-products {
+
+    @include media_interval($media_mobile, $media_tablet) {
+        padding-right: 0;
+    }
+
+    @include media_interval(0, $media_mobile) {
+        padding-right: 0;
+    }
 
 /*Product cards*/
 
@@ -11,7 +24,7 @@
         font-size: 38px;
         line-height: 46px;
         text-transform: uppercase;
-        color: #1E0606;
+        color: $c_black;
         margin-top: 92px;
         margin-bottom: 20px;
 
@@ -96,14 +109,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
             
-        @include media_interval($media_mobile, $media_tablet) {
-            width: 170px;
-            height: 170px;
-            max-height: 100%;
-            max-width: 100%;
-        }
-
-        @include media_interval(0, $media_mobile) {
+        @include media_interval(0, $media_tablet) {
             width: 170px;
             height: 170px;
             max-height: 100%;
@@ -118,7 +124,7 @@
         line-height: 32px;
         text-transform: uppercase;
         text-align: center;
-        color: #ffffff;  
+        color: $c_white;  
         position: relative;
 
         &:hover {     
@@ -149,7 +155,7 @@
 
     &__vector {
         border: none;  
-        background: rgba(112, 187, 220, 0.2);
+        background-color: rgba($c_blue, 0.2);
         width: 37px;
         height: 37px;
         margin-right: 6px;
@@ -167,7 +173,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;    
+        color: $c_black;    
         margin-left: 15px;
         margin-top: 20px;
         width: 580px;
@@ -193,18 +199,18 @@
 /*Colors*/
 
 .blue {
-    background-color:#DBE4DB;;
+    background-color: $c_blue--navy;
 }
 
 .pink {
-    background-color: rgba(186, 142, 107, 0.3);
+    background-color: rgba($c_brown, 0.3);
 }
 
 .beige {
-    background-color: #F8F2DA;
+    background-color: $c_beige;
 }
 
 .grey {
-    background-color: rgba(9, 3, 79, 0.17);
+    background-color: rgba($c_blue--deep, 0.17);
 }
 

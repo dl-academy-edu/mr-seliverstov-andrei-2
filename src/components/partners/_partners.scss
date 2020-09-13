@@ -23,7 +23,7 @@
 
     &__item:hover {
         opacity: 0.5;
-        transition:$tr_duration $tr_easing;
+        
     }
 
     &__item:active {
@@ -31,6 +31,8 @@
     }
 
     &__item {
+        transition:$tr_duration $tr_easing;
+        
         @include media_interval($media_mobile, $media_tablet) {
             transform: scale(0.7);
             width: 25%;

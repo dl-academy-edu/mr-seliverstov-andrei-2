@@ -1,3 +1,7 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
+
 /* Delivery */
 
 .delivery {
@@ -17,9 +21,10 @@
     &__picture {
         width: 480px;
         height: 559px;
+        object-fit: cover;
 
         @include media_interval($media_mobile, $media_tablet) {
-            min-width: 258px;
+            width: 258px;
             height: 512px;
         }
 
@@ -52,7 +57,7 @@
         font-size: 38px;
         line-height: 46px;
         text-transform: uppercase;
-        color: #1E0606;
+        color: $c_black;
         margin-bottom: 7px;
         margin-top: -9px;
 
@@ -89,7 +94,7 @@
         font-style: italic;
         font-size: 26px;
         line-height: 32px;
-        color: #1E0606;
+        color: $c_black;
         background: none;
         border: none;  
         width: 326px;
@@ -113,12 +118,12 @@
         }
     
         &:hover {
-            background-color: rgba(112, 187, 220, 0.2);
+            background-color: rgba($c_blue, 0.2);
             font-weight: 700;
         }
         
         &:active {
-            background-color: rgba(112, 187, 220, 0.2);
+            background-color: rgba($c_blue, 0.2);
             font-weight: 700;
         }
     }
@@ -128,7 +133,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;
+        color: $c_black;
 
         @include media_interval($media_mobile, $media_tablet) {
             font-size: 14px;
@@ -149,12 +154,14 @@
         max-width: 480px;
 
         @include media_interval($media_mobile, $media_tablet) {
-            margin-bottom: 30px;
+            margin-bottom: 30px;     
+            max-width: 580px;
         }
 
         @include media_interval(0, $media_mobile) {
             margin-top: -1px;
             margin-bottom: 31px;
+            max-width: 700px;
         }
     }    
 }

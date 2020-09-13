@@ -1,3 +1,7 @@
+@import "../colors";
+@import "../vars";
+@import "../mixins";
+
 /* About Us */
 
 .bottom-blocks {
@@ -18,7 +22,7 @@
 .about-us {
     margin-right: 57px;
     margin-top: 5px;
-    background: #E1F0F7;
+    background-color: $c_blue--light;
     padding: 31px;
     min-height: 236px;
     max-width: 543px;
@@ -44,7 +48,7 @@
         font-size: 38px;
         line-height: 46px;
         text-transform: uppercase;
-        color: #1E0606;
+        color: $c_black;
         margin-top: -55px;
         margin-bottom: 11px;
 
@@ -69,7 +73,7 @@
         font-weight: normal;
         font-size: 26px;
         line-height: 32px;
-        color: #1E0606;
+        color: $c_black;
         margin: 10px 0;
 
         @include media_interval(0, $media_mobile) {
@@ -85,7 +89,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;
+        color: $c_black;
         margin: 10px 0 29px;
 
         @include media_interval(0, $media_mobile) {
@@ -101,7 +105,7 @@
 
 .contacts {
     padding: 30px;
-    background: #E1F0F7;
+    background: $c_blue--light;
     height: 209px;
     max-width: 543px;
     width: 100%;    
@@ -126,7 +130,7 @@
         font-size: 38px;
         line-height: 46px;
         text-transform: uppercase;
-        color: #1E0606;
+        color: $c_black;
         margin-top: -55px;
         margin-bottom: 20px;
 
@@ -152,7 +156,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
-        color: #1E0606;
+        color: $c_black;
         margin: 20px 0 20px;
 
         @include media_interval(0, $media_mobile) {
@@ -164,18 +168,19 @@
     }
 }    
 
-.map__picture {
-
+.map__google {
+    width: 100%;
+    max-height: 196px;
+    height: 100%;
     margin-bottom: -120px;
+
     @include media_interval($media_mobile, $media_tablet) {
-        min-width: 284px;
-        min-height: 151px;
-        background-size: cover;
+        max-width: 415px;
+        width: 100%;
     }
 
     @include media_interval(0, $media_mobile) {
         min-width: 335px;
         min-height: 196px;
-        background-size: cover;
     }
 }

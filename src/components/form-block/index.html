@@ -1,43 +1,83 @@
-@@include('heading-&-breadcrumbs/index.html', {
-    "text": "Contact Us",
-    "title": "Contact Us"
-})
-<div class="form container">
-    <form action="/pages/contact-us/index.html" class="modal-window">
-        <div class="form__cell-600">
-            <label class="form__label">
-                <span class="form__label-text">Name</span>
-                <input class="form__label-input" type="text" name="name" placeholder="Ivan Ivanov">                    
-            </label>
-        </div>                
-        <div class="form__row">
-            <div class="form__cell-50">
+@@if (type === "page") {
+    @@include('heading-&-breadcrumbs/index.html', {
+        "text": "Contact Us",
+        "title": "Contact Us"
+    })
+    <div class="form container">
+        <form action="/pages/contact-us/index.html" class="modal-window">
+            <div class="form__cell-600">
                 <label class="form__label">
-                    <span class="form__label-text">Phone</span>
-                    <input class="form__label-input" type="tel" name="phone">
+                    <span class="form__label-text">Name</span>
+                    <input class="form__label-input" type="text" name="name" placeholder="Ivan Ivanov">                    
                 </label>
-            </div>
-            <div class="form__cell-50">
+            </div>                
+            <div class="form__row">
+                <div class="form__cell-50">
+                    <label class="form__label">
+                        <span class="form__label-text">Phone</span>
+                        <input class="form__label-input" type="tel" name="phone">
+                    </label>
+                </div>
+                <div class="form__cell-50">
+                    <label class="form__label">
+                        <span class="form__label-text">Email</span>
+                        <input class="form__label-input" type="email" name="email">
+                    </label> 
+                </div>
+            </div>            
+            <label class="form__label">    
+                <span class="form__label-text">Message</span>
+                <textarea class="form__label-textarea" name="message" cols="30" rows="10"></textarea>
+            </label>
+            <label class="consent">
+                <input class="hidden consent__input" name="consent" type="checkbox" value="consent">
+                <span class="clicking-button">By clicking on the button, you consent to the processing of your personal data</span>
+            </label>
+            <button class="submit-button button" type="submit" disabled>Submit</button>
+        </form>
+        <section class="text-block">
+            <h2 class="hidden">header</h2>
+            <p class="text-block__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+            <p class="text-block__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            <p class="text-block__bold-text">An expert is waiting to help you!</p>
+        </section>  
+    </div>
+}
+
+@@if (type === "window") {
+    <div class="modal-background modal_js">
+        <form action="/" class="modal-window main-page">
+            <div class="form__cell-600">
                 <label class="form__label">
-                    <span class="form__label-text">Email</span>
-                    <input class="form__label-input" type="email" name="email">
-                </label> 
-            </div>
-        </div>            
-        <label class="form__label">    
-            <span class="form__label-text">Message</span>
-            <textarea class="form__label-textarea" name="message" cols="30" rows="10"></textarea>
-        </label>
-        <label class="consent">
-            <input class="hidden consent__input" name="consent" type="checkbox" value="consent">
-            <span class="clicking-button">By clicking on the button, you consent to the processing of your personal data</span>
-        </label>
-        <button class="submit-button button" type="submit" disabled>Submit</button>
-    </form>
-    <section class="text-block">
-        <h2 class="hidden">header</h2>
-        <p class="text-block__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
-        <p class="text-block__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-        <p class="text-block__bold-text">An expert is waiting to help you!</p>
-    </section>  
-</div>
+                    <span class="form__label-text">Name</span>
+                    <input class="form__label-input input-text_js modal-window__placeholder" type="text" name="name" placeholder="Ivan Ivanov">                    
+                </label>
+            </div>                
+            <div class="form__row">
+                <div class="form__cell-50">
+                    <label class="form__label">
+                        <span class="form__label-text">Phone</span>
+                        <input class="form__label-input" type="tel" name="phone">
+                    </label>
+                </div>
+                <div class="form__cell-50">
+                    <label class="form__label">
+                        <span class="form__label-text">Email</span>
+                        <input class="form__label-input" type="email" name="email">
+                    </label> 
+                </div>
+            </div>            
+            <label class="form__label">    
+                <span class="form__label-text">Message</span>
+                <textarea class="form__label-textarea" name="message" cols="30" rows="10"></textarea>
+            </label>
+            <label class="consent">
+                <input class="hidden consent__input" name="consent" type="checkbox" value="consent">
+                <span class="clicking-button">By clicking on the button, you consent to the processing of your personal data</span>
+            </label>
+            <button class="submit-button button" type="submit">Submit</button>
+            <button class="exit-button exit-button_js" type="button" aria-label="exit"></button>
+        </form>
+    </div>    
+}
+

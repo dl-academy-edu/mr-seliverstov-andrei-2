@@ -1,3 +1,4 @@
+@import "../colors";
 @import "../vars";
 @import "../mixins";
 
@@ -22,7 +23,7 @@
 
 .poster {
     display: flex;
-    background: #EEE4DB;
+    background-color: $c_beige--light;
     height: 372px;
     margin-top: 125px;
 
@@ -66,7 +67,7 @@
 
         &-button {
             border: none;
-            background-color: #D6CAC2;
+            background-color: $c_brown--light;
             width: 31px;
             height: 3px;
             display: block;
@@ -84,14 +85,14 @@
             }
 
             &:hover {
-                background-color: rgba(30, 6, 6, 0.6);
+                background-color: rgba($c_black, 0.6);
                 cursor: pointer;
                 transition:$tr_duration $tr_easing;
             }            
         }
 
         &-brown-button {
-            background-color: rgba(30, 6, 6, 0.6);
+            background-color: rgba($c_black, 0.6);
         }
 
         &_number-block {
@@ -149,7 +150,7 @@
         font-weight: bold;
         font-size: 40px;
         line-height: 110%;
-        color: #1E0606;
+        color: $c_black;
         margin-bottom: 10px;
         margin-top: 0;
         flex-wrap: nowrap;
@@ -168,7 +169,7 @@
         font-weight: normal;
         font-size: 20px;
         line-height: 25px;
-        color: #1E0606;
+        color: $c_black;
         margin: 18px 0 29px;
 
         @include media_interval(0, $media_mobile) {
@@ -195,7 +196,6 @@
         margin-top: -89px;
         width: 635.49px;
         height: 461px;
-        margin-right: 60px;
 
         @include media_interval($media_mobile, $media_tablet) {
             max-width: 385px;
@@ -208,7 +208,7 @@
             max-width: 292px;
             max-height: 226px;
             margin-top: 212px;
-            right: -58px;
+            left: 90px;
             position: absolute;
         }
     }
@@ -216,7 +216,7 @@
 /*Bottom block*/
 
    &__bottom-block {
-        background: #C29974;    
+        background-color: $c_beige--dark;    
 
         @include media_interval(0, $media_mobile) {
             height: 55px;
@@ -235,7 +235,7 @@
             margin: 0;
             text-align: center;
             white-space: nowrap;
-            color: white;
+            color: $c_white;
 
             @include media_interval(0, $media_mobile) {
                 padding: 11px 10px;
